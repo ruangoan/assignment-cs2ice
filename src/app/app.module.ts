@@ -13,6 +13,7 @@ import { TipComponent } from './tip/tip.component';
 import { TeamComponent } from './team/team.component';
 import { TeamchildComponent } from './teamchild/teamchild.component';
 import { LadderComponent } from './ladder/ladder.component';
+import { TestGitComponent } from './test-git/test-git.component';
 
 
 
@@ -25,7 +26,8 @@ import { LadderComponent } from './ladder/ladder.component';
     TipComponent,
     TeamComponent,
     TeamchildComponent,
-    LadderComponent
+    LadderComponent,
+    TestGitComponent
   ],
   imports: [
     BrowserModule,
