@@ -1,0 +1,10 @@
+<div id="TeamDiv">
+    <h2>My Teams</h2>
+    
+    <ul>
+      <li class="items" *ngFor="let team of teams" (click)="onSelect(team)">
+        <span>{{team.id}}</span> {{team.name}}
+      </li>
+    </ul>
+    <app-teamchild [team]="selectedTeam"></app-teamchild>
+</div>
