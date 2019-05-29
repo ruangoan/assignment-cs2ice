@@ -6,6 +6,7 @@ import { TipComponent } from './tip/tip.component';
 import { HomeComponent } from './home/home.component';
 import { TeamComponent } from './team/team.component';
 import { LadderComponent } from './ladder/ladder.component';
+import { TeamchildComponent } from './teamchild/teamchild.component';
 const routes: Routes = [
   {path: 'teams', component: ViewLeagueTableComponent},
   {path: 'games', component: ViewGameTableComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'teamselect', component: TeamComponent},
   {path: 'ladder', component: LadderComponent}
+  // {path: 'teamchild', component: TeamchildComponent}
 ];
 
 @NgModule({

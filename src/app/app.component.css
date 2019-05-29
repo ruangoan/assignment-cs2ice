@@ -4,7 +4,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: lightblue;
+ 
 }
 
 li {
@@ -15,7 +15,7 @@ li a {
   display: block;
   color: black;
   text-align: center;
-  padding: 16px;
+  padding: 10px;
   text-decoration: none;
 }
 
@@ -23,5 +23,18 @@ li a:hover {
   background-color: #f05353;
 }
 h1 {
-  text-align: center;
+  text-align: left;
+}
+body{
+  background-image:url(  "https://pmgfamily.org/wp-content/uploads/2018/06/dab895a256053f09af23742ebeaed127.jpg");
+  background-size: contain;
+}
+div {
+  /* width: 90%px; */
+  border: 10px solid green;
+  /* padding: 10px; */
+  margin: 120px;
+  overflow-y: auto;
+  /* overscroll-behavior-y: contain; */
+  height: 350px;
 }

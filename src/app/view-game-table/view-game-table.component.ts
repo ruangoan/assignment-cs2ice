@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Game } from '../game';
-// import { GameData } from '../gamedata';
 import { DataServiceService } from '../data-service.service';
 import { Team } from '../team';
 
@@ -10,18 +9,27 @@ import { Team } from '../team';
   styleUrls: ['./view-game-table.component.css']
 })
 export class ViewGameTableComponent implements OnInit {
- games:Game[];
- teams:Team[];
+//  games:Game[];
+//  teams:Team[];
   constructor(private dataService: DataServiceService) { }
- 
+  teams: Team[];
+  games: Game[];
+  showSpinner: boolean;
   ngOnInit() {
     this.getGames();
     this.getAFLTeams();
   }
   getGames(): void {
-    this.dataService.getGames().subscribe(temp => { this.games = temp;});
+    this.showSpinner = true;
+    this.dataService.getGames("https://api.squiggle.com.au/?q=games;year=2019")
+    .subscribe(temp => {this.games = temp.filter(
+      (team: any) =>
+        (team.complete == 100 && team.ateam ) ||
+        (team.complete == 100 && team.hteam )
+    );})
+      .add(() => (this.showSpinner = false));
   }
   getAFLTeams(): void {
-    this.dataService.getTeams().subscribe(temp => { this.teams = temp;});
+    this.dataService.getTeams("https://api.squiggle.com.au/?q=teams").subscribe(temp => { this.teams = temp;});
   }
 }

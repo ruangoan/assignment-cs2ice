@@ -7,7 +7,6 @@ import { Team } from '../team';
   styleUrls: ['./teamchild.component.css']
 })
 export class TeamchildComponent implements OnChanges {
-  teams:Team;
   @Input() team: Team;
   constructor() { }
 

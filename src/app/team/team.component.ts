@@ -26,7 +26,7 @@ export class TeamComponent implements OnInit {
   }
 
   getAFLTeams(): void {
-    this.dataService.getTeams().subscribe(temp => { this.teams = temp;});
+    this.dataService.getTeams("https://api.squiggle.com.au/?q=teams").subscribe(temp => { this.teams = temp;});
   }
 }
 

@@ -1,10 +1,28 @@
+
 <div id="TeamDiv">
-    <h2>My Teams</h2>
-    
-    <ul>
-      <li class="items" *ngFor="let team of teams" (click)="onSelect(team)">
-        <span>{{team.id}}</span> {{team.name}}
-      </li>
-    </ul>
-    <app-teamchild [team]="selectedTeam"></app-teamchild>
+    <h2>TEAMS LIST</h2>
 </div>
+<div  style="margin-top: 2em;">
+  <table>
+    <tr>
+        <th>LOGO</th>
+        <th>Team</th>
+        <th>Detail1</th>
+        <th>Detail</th>
+      </tr>
+      
+    
+      <tr *ngFor="let team of teams">
+        <td><img src="https://squiggle.com.au/{{team.logo}}"></td>
+        <td>{{team.name || uppercase}}</td>
+        <td><button type="button" (onclick)="onSelect(team)">Stats</button></td>
+        <td><button type="button" (onclick)="onSelect(team)"> Leader</button> </td>
+    
+      </tr>
+    
+      
+    
+    </table>
+ 
+ </div>
+ 

@@ -1,13 +1,15 @@
 <div id="rank">
-
-    <table style="text-align: center;">
+  <p>Click the button to sort the table alphabetically, by name:</p>
+  <p><button (click)="sortTable()">Sort</button></p>
+    <table id="myTable">
 
         <tr>
-          <th>Team</th>
-          <th>Rank</th>
-          <th>PCT</th>
+          <th >Team</th>
+          <th >Rank</th>
+          <th >PCT</th>
         </tr>
         
+      
       
         <tr *ngFor="let rank of ranks" >
       
@@ -19,36 +21,10 @@
         </tr>
       
         
-      
+     
       </table>
+    
+     
 
-      <!--<table mat-table [getRank]="getRank" matSort class="mat-elevation-z8"> -->
 
-          <!-- Position Column -->
-          <!-- <ng-container matColumnDef="position">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> No. </th>
-            <td mat-cell *matCellDef="let rank"> {{rank.teamid}} </td>
-          </ng-container> -->
-        
-          <!-- Name Column -->
-          <!-- <ng-container matColumnDef="name">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
-            <td mat-cell *matCellDef="let rank"> {{rank.team}} </td>
-          </ng-container> -->
-        
-          <!-- Weight Column -->
-          <!-- <ng-container matColumnDef="rank">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> rank </th>
-            <td mat-cell *matCellDef="let rank"> {{rank.rank}} </td>
-          </ng-container> -->
-        
-          <!-- Symbol Column -->
-          <!-- <ng-container matColumnDef="PTC">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> PTC </th>
-            <td mat-cell *matCellDef="let rank"> {{rank.wins}} </td>
-          </ng-container> -->
-        
-          <!-- <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-        </table> --> -->
-</div>
+  </div>
