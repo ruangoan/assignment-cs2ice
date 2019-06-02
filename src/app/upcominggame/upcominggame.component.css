@@ -1,0 +1,74 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: center;
+    }
+    th {
+        text-align: center;
+      } */
+    td{
+      font-size: 30px;
+    }
+    #myInput1 {
+      background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+      background-position: 10px 12px; /* Position the search icon */
+      background-repeat: no-repeat; /* Do not repeat the icon image */
+      width: 35%; /* Full-width */
+      font-size: 16px; /* Increase font-size */
+      padding: 12px 20px 12px 40px; /* Add some padding */
+      border: 1px solid red; /* Add a grey border */
+      margin-bottom: 12px; /* Add some space below the input */
+      
+    }
+    #myInput2 {
+      background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+      background-position: 10px 12px; /* Position the search icon */
+      background-repeat: no-repeat; /* Do not repeat the icon image */
+      width: 35%; /* Full-width */
+      text-align: right;
+      font-size: 16px; /* Increase font-size */
+      padding: 12px 20px 12px 40px; /* Add some padding */
+      border: 1px solid blue; /* Add a grey border */
+      margin-bottom: 2px; /* Add some space below the input */
+      
+    }
+    
+    #myTable {
+      border-collapse: collapse; /* Collapse borders */
+      width: 100%; /* Full-width */
+      border: 1px solid white; /* Add a grey border */
+      font-size: 18px; /* Increase font-size */
+    }
+    
+    
+    #myTable th, #myTable td {
+      text-align: center; 
+      padding: 12px; /* Add padding */
+      background-color: white;
+    }
+    
+    #myTable tr {
+      /* Add a bottom border to all table rows */
+      border-bottom: 1px solid white; 
+    }
+    
+    /* #myTable tr.header, #myTable tr:hover {
+      /* Add a grey background color to the table header and on hover */
+      
+      .box {
+        width: 60%px;
+        border: 10px solid green;
+        padding: 10px;
+        margin: 120px;
+        overflow-y: auto;
+        overscroll-behavior-y: contain;
+        height: 450px;
+      }

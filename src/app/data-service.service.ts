@@ -29,7 +29,7 @@ export class DataServiceService {
 
       getTips() : Observable<Tip[]> {
    
-        return this.http.get('https://api.squiggle.com.au/?q=tips;year=2019;round=1').pipe(
+        return this.http.get("https://api.squiggle.com.au/?q=tips;year=2019;round=11").pipe(
           map((data: any) => data.tips.map((item: any) => new Tip(
             item.confidence,
             item.bits,
@@ -85,4 +85,33 @@ export class DataServiceService {
       ); 
   }
 
+  getNextGames(gameURL: string) : Observable<Game[]> {
+   
+    return this.http.get(gameURL).pipe(
+      map((data: any) => data.games.map((item: any) => new Game(
+        item.complete,
+        item.is_grand_final,
+        item.tz,
+        item.hbehinds,
+        item.ateam,
+        item.winnerteamid,
+        item.hgoals,
+        item.updated,
+        item.round,
+        item.is_final,
+        item.hscore,
+        item.abehinds,
+        item.winner,
+        item.ascore,
+        item.hteam,
+        item.ateamid,
+        item.venue,
+        item.hteamid,
+        item.agoals,
+        item.year,
+        item.date,
+        item.id
+      )))
+    ); 
+}
 }

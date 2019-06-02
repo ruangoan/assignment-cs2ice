@@ -1,0 +1,1202 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./node_modules/webpack/hot sync ^\\.\\/log$":
+/*!*************************************************!*\
+  !*** (webpack)/hot sync nonrecursive ^\.\/log$ ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./log": "./node_modules/webpack/hot/log.js"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) { // check for number or string
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return id;
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/webpack/hot sync ^\\.\\/log$";
+
+/***/ }),
+
+/***/ "./src/$$_lazy_route_resource lazy recursive":
+/*!**********************************************************!*\
+  !*** ./src/$$_lazy_route_resource lazy namespace object ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
+
+/***/ }),
+
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _view_league_table_view_league_table_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./view-league-table/view-league-table.component */ "./src/app/view-league-table/view-league-table.component.ts");
+/* harmony import */ var _view_game_table_view_game_table_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./view-game-table/view-game-table.component */ "./src/app/view-game-table/view-game-table.component.ts");
+/* harmony import */ var _tip_tip_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./tip/tip.component */ "./src/app/tip/tip.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _team_team_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./team/team.component */ "./src/app/team/team.component.ts");
+/* harmony import */ var _ladder_ladder_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ladder/ladder.component */ "./src/app/ladder/ladder.component.ts");
+
+
+
+
+
+
+
+
+
+var routes = [
+    { path: 'teams', component: _view_league_table_view_league_table_component__WEBPACK_IMPORTED_MODULE_3__["ViewLeagueTableComponent"] },
+    { path: 'games', component: _view_game_table_view_game_table_component__WEBPACK_IMPORTED_MODULE_4__["ViewGameTableComponent"] },
+    { path: 'tips', component: _tip_tip_component__WEBPACK_IMPORTED_MODULE_5__["TipComponent"] },
+    { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"] },
+    { path: 'teamselect', component: _team_team_component__WEBPACK_IMPORTED_MODULE_7__["TeamComponent"] },
+    { path: 'ladder', component: _ladder_ladder_component__WEBPACK_IMPORTED_MODULE_8__["LadderComponent"] }
+    // {path: 'teamchild', component: TeamchildComponent}
+];
+var AppRoutingModule = /** @class */ (function () {
+    function AppRoutingModule() {
+    }
+    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes, { enableTracing: true })],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+        })
+    ], AppRoutingModule);
+    return AppRoutingModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.component.css":
+/*!***********************************!*\
+  !*** ./src/app/app.component.css ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\nul {\r\n  list-style-type: none;\r\n  margin: 0;\r\n  padding: 0;\r\n  overflow: hidden;\r\n \r\n}\r\n\r\nli {\r\n  float: left;\r\n}\r\n\r\nli a {\r\n  display: block;\r\n  color: black;\r\n  text-align: center;\r\n  padding: 10px;\r\n  text-decoration: none;\r\n}\r\n\r\nli a:hover {\r\n  background-color: #f05353;\r\n}\r\n\r\nh1 {\r\n  text-align: left;\r\n}\r\n\r\nbody{\r\n  background-image:url(  \"https://pmgfamily.org/wp-content/uploads/2018/06/dab895a256053f09af23742ebeaed127.jpg\");\r\n  background-size: contain;\r\n}\r\n\r\n/* div {\r\n  width: 90%px;\r\n  border: 10px solid green;\r\n  padding: 10px;\r\n  margin: 120px;\r\n  overflow-y: auto;\r\n  overscroll-behavior-y: contain;\r\n  height: 350px;\r\n} */\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0VBQ0UscUJBQXFCO0VBQ3JCLFNBQVM7RUFDVCxVQUFVO0VBQ1YsZ0JBQWdCOztBQUVsQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGFBQWE7RUFDYixxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSx5QkFBeUI7QUFDM0I7O0FBQ0E7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBQ0E7RUFDRSwrR0FBK0c7RUFDL0csd0JBQXdCO0FBQzFCOztBQUNBOzs7Ozs7OztHQVFHIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxudWwge1xyXG4gIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcclxuICBtYXJnaW46IDA7XHJcbiAgcGFkZGluZzogMDtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gXHJcbn1cclxuXHJcbmxpIHtcclxuICBmbG9hdDogbGVmdDtcclxufVxyXG5cclxubGkgYSB7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgY29sb3I6IGJsYWNrO1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBwYWRkaW5nOiAxMHB4O1xyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufVxyXG5cclxubGkgYTpob3ZlciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2YwNTM1MztcclxufVxyXG5oMSB7XHJcbiAgdGV4dC1hbGlnbjogbGVmdDtcclxufVxyXG5ib2R5e1xyXG4gIGJhY2tncm91bmQtaW1hZ2U6dXJsKCAgXCJodHRwczovL3BtZ2ZhbWlseS5vcmcvd3AtY29udGVudC91cGxvYWRzLzIwMTgvMDYvZGFiODk1YTI1NjA1M2YwOWFmMjM3NDJlYmVhZWQxMjcuanBnXCIpO1xyXG4gIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcclxufVxyXG4vKiBkaXYge1xyXG4gIHdpZHRoOiA5MCVweDtcclxuICBib3JkZXI6IDEwcHggc29saWQgZ3JlZW47XHJcbiAgcGFkZGluZzogMTBweDtcclxuICBtYXJnaW46IDEyMHB4O1xyXG4gIG92ZXJmbG93LXk6IGF1dG87XHJcbiAgb3ZlcnNjcm9sbC1iZWhhdmlvci15OiBjb250YWluO1xyXG4gIGhlaWdodDogMzUwcHg7XHJcbn0gKi8iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/app.component.html":
+/*!************************************!*\
+  !*** ./src/app/app.component.html ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<ul style=\"list-style-type:none;\">\r\n<h1>{{title}} </h1>\r\n<ul>\r\n<nav>\r\n    <li> <a routerLink=\"/home\"> HOME </a> </li>\r\n    <li> <a routerLink=\"/teams\"> Teams </a> </li>  \r\n    <li> <a routerLink=\"/games\"> Games </a> </li>\r\n    <li> <a routerLink=\"/tips\"> Tips </a> </li>  \r\n    <li> <a routerLink=\"/teamselect\"> TeamSelect </a> </li>\r\n    <li> <a routerLink=\"/ladder\"> Ladder </a> </li>\r\n</nav>\r\n</ul>\r\n<div>\r\n    <body>\r\n        \r\n            <router-outlet></router-outlet>\r\n        <!-- <app-test-git></app-test-git> -->\r\n    </body>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/app.component.ts":
+/*!**********************************!*\
+  !*** ./src/app/app.component.ts ***!
+  \**********************************/
+/*! exports provided: AppComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var AppComponent = /** @class */ (function () {
+    function AppComponent() {
+        this.title = 'AFL';
+    }
+    AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-root',
+            template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
+            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
+        })
+    ], AppComponent);
+    return AppComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/app.module.ts":
+/*!*******************************!*\
+  !*** ./src/app/app.module.ts ***!
+  \*******************************/
+/*! exports provided: AppModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _view_league_table_view_league_table_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./view-league-table/view-league-table.component */ "./src/app/view-league-table/view-league-table.component.ts");
+/* harmony import */ var _data_service_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./data-service.service */ "./src/app/data-service.service.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _view_game_table_view_game_table_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./view-game-table/view-game-table.component */ "./src/app/view-game-table/view-game-table.component.ts");
+/* harmony import */ var _tip_tip_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./tip/tip.component */ "./src/app/tip/tip.component.ts");
+/* harmony import */ var _team_team_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./team/team.component */ "./src/app/team/team.component.ts");
+/* harmony import */ var _teamchild_teamchild_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./teamchild/teamchild.component */ "./src/app/teamchild/teamchild.component.ts");
+/* harmony import */ var _ladder_ladder_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./ladder/ladder.component */ "./src/app/ladder/ladder.component.ts");
+/* harmony import */ var _test_git_test_git_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./test-git/test-git.component */ "./src/app/test-git/test-git.component.ts");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AppModule = /** @class */ (function () {
+    function AppModule() {
+    }
+    AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+            declarations: [
+                _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
+                _view_league_table_view_league_table_component__WEBPACK_IMPORTED_MODULE_7__["ViewLeagueTableComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"],
+                _view_game_table_view_game_table_component__WEBPACK_IMPORTED_MODULE_10__["ViewGameTableComponent"],
+                _tip_tip_component__WEBPACK_IMPORTED_MODULE_11__["TipComponent"],
+                _team_team_component__WEBPACK_IMPORTED_MODULE_12__["TeamComponent"],
+                _teamchild_teamchild_component__WEBPACK_IMPORTED_MODULE_13__["TeamchildComponent"],
+                _ladder_ladder_component__WEBPACK_IMPORTED_MODULE_14__["LadderComponent"],
+                _test_git_test_git_component__WEBPACK_IMPORTED_MODULE_15__["TestGitComponent"]
+            ],
+            imports: [
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"]
+            ],
+            providers: [_data_service_service__WEBPACK_IMPORTED_MODULE_8__["DataServiceService"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
+        })
+    ], AppModule);
+    return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/data-service.service.ts":
+/*!*****************************************!*\
+  !*** ./src/app/data-service.service.ts ***!
+  \*****************************************/
+/*! exports provided: DataServiceService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataServiceService", function() { return DataServiceService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _team__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./team */ "./src/app/team.ts");
+/* harmony import */ var _game__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./game */ "./src/app/game.ts");
+/* harmony import */ var _tip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./tip */ "./src/app/tip.ts");
+
+
+
+
+
+
+
+var DataServiceService = /** @class */ (function () {
+    function DataServiceService(http) {
+        this.http = http;
+    }
+    DataServiceService.prototype.getTeams = function (teamURL) {
+        return this.http.get(teamURL).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (data) { return data.teams.map(function (item) { return new _team__WEBPACK_IMPORTED_MODULE_4__["Team"](item.logo, item.id, item.name, item.abbrev); }); }));
+    };
+    DataServiceService.prototype.getTips = function () {
+        return this.http.get('https://api.squiggle.com.au/?q=tips;year=2019;round=1').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (data) { return data.tips.map(function (item) { return new _tip__WEBPACK_IMPORTED_MODULE_6__["Tip"](item.confidence, item.bits, item.gameid, item.ateamid, item.venue, item.year, item.correct, item.date, item.updated, item.hteam, item.tipteamid, item.margin, item.err, item.tip, item.ateam, item.source, item.sourceid, item.hconfidence, item.hteamid, item.round); }); }));
+    };
+    DataServiceService.prototype.getGames = function (gameURL) {
+        return this.http.get(gameURL).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (data) { return data.games.map(function (item) { return new _game__WEBPACK_IMPORTED_MODULE_5__["Game"](item.complete, item.is_grand_final, item.tz, item.hbehinds, item.ateam, item.winnerteamid, item.hgoals, item.updated, item.round, item.is_final, item.hscore, item.abehinds, item.winner, item.ascore, item.hteam, item.ateamid, item.venue, item.hteamid, item.agoals, item.year, item.date, item.id); }); }));
+    };
+    DataServiceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"]])
+    ], DataServiceService);
+    return DataServiceService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/game.ts":
+/*!*************************!*\
+  !*** ./src/app/game.ts ***!
+  \*************************/
+/*! exports provided: Game */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Game", function() { return Game; });
+var Game = /** @class */ (function () {
+    function Game(complete, is_grand_final, tz, hbehinds, ateam, winnerteamid, hgoals, updated, round, is_final, hscore, abehinds, winner, ascore, hteam, ateamid, venue, hteamid, agoals, year, date, id) {
+        this.complete = complete;
+        this.is_grand_final = is_grand_final;
+        this.tz = tz;
+        this.hbehinds = hbehinds;
+        this.ateam = ateam;
+        this.winnerteamid = winnerteamid;
+        this.hgoals = hgoals;
+        this.updated = updated;
+        this.round = round;
+        this.is_final = is_final;
+        this.hscore = hscore;
+        this.abehinds = abehinds;
+        this.winner = winner;
+        this.ascore = ascore;
+        this.hteam = hteam;
+        this.ateamid = ateamid;
+        this.venue = venue;
+        this.hteamid = hteamid;
+        this.agoals = agoals;
+        this.year = year;
+        this.date = date;
+        this.id = id;
+    }
+    return Game;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.css":
+/*!*****************************************!*\
+  !*** ./src/app/home/home.component.css ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.html":
+/*!******************************************!*\
+  !*** ./src/app/home/home.component.html ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/home/home.component.ts ***!
+  \****************************************/
+/*! exports provided: HomeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var HomeComponent = /** @class */ (function () {
+    // @Input('Search') Search:String;
+    function HomeComponent() {
+    }
+    HomeComponent.prototype.ngOnInit = function () {
+    };
+    HomeComponent.prototype.scroll = function () {
+        window.onscroll = function () { scrollFunction(); };
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.padding = "30px 10px";
+                document.getElementById("logo").style.fontSize = "25px";
+            }
+            else {
+                document.getElementById("navbar").style.padding = "80px 10px";
+                document.getElementById("logo").style.fontSize = "35px";
+            }
+        }
+    };
+    HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-home',
+            template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
+            styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/home/home.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], HomeComponent);
+    return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/ladder/ladder.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/ladder/ladder.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "table {\r\n  font-family: arial, sans-serif;\r\n  border-collapse: collapse;\r\n  width: 100%;\r\n}\r\n  table, th, td {\r\n      border: 1px solid black;\r\n      border-collapse: collapse;\r\n  }\r\n  th, td {\r\n      padding: 5px;\r\n      text-align: center;\r\n  }\r\n  th {\r\n      text-align: center;\r\n    }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGFkZGVyL2xhZGRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsOEJBQThCO0VBQzlCLHlCQUF5QjtFQUN6QixXQUFXO0FBQ2I7RUFDRTtNQUNJLHVCQUF1QjtNQUN2Qix5QkFBeUI7RUFDN0I7RUFDQTtNQUNJLFlBQVk7TUFDWixrQkFBa0I7RUFDdEI7RUFDQTtNQUNJLGtCQUFrQjtJQUNwQiIsImZpbGUiOiJzcmMvYXBwL2xhZGRlci9sYWRkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbInRhYmxlIHtcclxuICBmb250LWZhbWlseTogYXJpYWwsIHNhbnMtc2VyaWY7XHJcbiAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG4gIHRhYmxlLCB0aCwgdGQge1xyXG4gICAgICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcclxuICAgICAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTtcclxuICB9XHJcbiAgdGgsIHRkIHtcclxuICAgICAgcGFkZGluZzogNXB4O1xyXG4gICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gIHRoIHtcclxuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgfSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/ladder/ladder.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/ladder/ladder.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"rank\">\n  <p>Click the button to sort the table alphabetically, by name:</p>\n  <p><button (click)=\"sortTable()\">Sort</button></p>\n    <table id=\"myTable\">\n\n        <tr>\n          <th >Team</th>\n          <th >Rank</th>\n          <th >PCT</th>\n        </tr>\n        \n      \n      \n        <tr *ngFor=\"let rank of ranks\" >\n      \n          <td>{{rank.team}}</td>\n          <td>{{rank.rank}}</td>\n          <td>{{rank.wins}}</td>\n      \n      \n        </tr>\n      \n        \n     \n      </table>\n    \n     \n\n\n  </div>"
+
+/***/ }),
+
+/***/ "./src/app/ladder/ladder.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/ladder/ladder.component.ts ***!
+  \********************************************/
+/*! exports provided: LadderComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LadderComponent", function() { return LadderComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _rankdata__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../rankdata */ "./src/app/rankdata.ts");
+
+
+
+var LadderComponent = /** @class */ (function () {
+    function LadderComponent(rankdata) {
+        this.rankdata = rankdata;
+    }
+    LadderComponent.prototype.ngOnInit = function () {
+        this.getRank();
+    };
+    LadderComponent.prototype.getRank = function () {
+        var _this = this;
+        this.rankdata.getRank().subscribe(function (temp) { _this.ranks = temp; });
+    };
+    LadderComponent.prototype.sortTable = function () {
+        console.log("fired");
+        var table, rows, switching, i, x, y, shouldSwitch;
+        table = document.getElementById("myTable");
+        switching = true;
+        while (switching) {
+            switching = false;
+            rows = table.rows;
+            for (i = 1; i < (rows.length - 1); i++) {
+                shouldSwitch = false;
+                x = rows[i].getElementsByTagName("TD")[1];
+                y = rows[i + 1].getElementsByTagName("TD")[1];
+                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+            if (shouldSwitch) {
+                /*If a switch has been marked, make the switch
+                and mark that a switch has been done:*/
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+            }
+        }
+    };
+    LadderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-ladder',
+            template: __webpack_require__(/*! ./ladder.component.html */ "./src/app/ladder/ladder.component.html"),
+            styles: [__webpack_require__(/*! ./ladder.component.css */ "./src/app/ladder/ladder.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_rankdata__WEBPACK_IMPORTED_MODULE_2__["Rankdata"]])
+    ], LadderComponent);
+    return LadderComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/rank.ts":
+/*!*************************!*\
+  !*** ./src/app/rank.ts ***!
+  \*************************/
+/*! exports provided: Rank */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Rank", function() { return Rank; });
+var Rank = /** @class */ (function () {
+    function Rank(rank, round, source, teamid, wins, team, year, swarms, sourceid, percentage, updated, mean_rank) {
+        this.rank = rank;
+        this.round = round;
+        this.source = source;
+        this.teamid = teamid;
+        this.wins = wins;
+        this.team = team;
+        this.year = year;
+        this.swarms = swarms;
+        this.sourceid = sourceid;
+        this.percentage = percentage;
+        this.updated = updated;
+        this.mean_rank = mean_rank;
+    }
+    return Rank;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/rankdata.ts":
+/*!*****************************!*\
+  !*** ./src/app/rankdata.ts ***!
+  \*****************************/
+/*! exports provided: Rankdata */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Rankdata", function() { return Rankdata; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _rank__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./rank */ "./src/app/rank.ts");
+
+
+
+
+
+var Rankdata = /** @class */ (function () {
+    function Rankdata(http) {
+        this.http = http;
+    }
+    Rankdata.prototype.getRank = function () {
+        return this.http.get('https://api.squiggle.com.au/?q=ladder').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (data) { return data.ladder.map(function (item) { return new _rank__WEBPACK_IMPORTED_MODULE_4__["Rank"](item.rank, item.round, item.source, item.teamid, item.wins, item.team, item.year, item.swarms, item.sourceid, item.percentage, item.updated, item.mean_rank); }); }));
+    };
+    Rankdata = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], Rankdata);
+    return Rankdata;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/team.ts":
+/*!*************************!*\
+  !*** ./src/app/team.ts ***!
+  \*************************/
+/*! exports provided: Team */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Team", function() { return Team; });
+var Team = /** @class */ (function () {
+    function Team(logo, id, name, abbrev) {
+        this.logo = logo;
+        this.id = id;
+        this.name = name;
+        this.abbrev = abbrev;
+    }
+    return Team;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/team/team.component.css":
+/*!*****************************************!*\
+  !*** ./src/app/team/team.component.css ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "table {\r\n  font-family: arial, sans-serif;\r\n  border-collapse: collapse;\r\n  width: 100%;\r\n}\r\n  table, th, td {\r\n      border: 1px solid black;\r\n      border-collapse: collapse;\r\n  }\r\n  th, td {\r\n      padding: 5px;\r\n      text-align: center;\r\n  }\r\n  th {\r\n      text-align: center;\r\n    }\r\n  td {\r\n    font-size: 40px;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGVhbS90ZWFtLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSw4QkFBOEI7RUFDOUIseUJBQXlCO0VBQ3pCLFdBQVc7QUFDYjtFQUNFO01BQ0ksdUJBQXVCO01BQ3ZCLHlCQUF5QjtFQUM3QjtFQUNBO01BQ0ksWUFBWTtNQUNaLGtCQUFrQjtFQUN0QjtFQUNBO01BQ0ksa0JBQWtCO0lBQ3BCO0VBQ0Y7SUFDRSxlQUFlO0VBQ2pCIiwiZmlsZSI6InNyYy9hcHAvdGVhbS90ZWFtLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJ0YWJsZSB7XHJcbiAgZm9udC1mYW1pbHk6IGFyaWFsLCBzYW5zLXNlcmlmO1xyXG4gIGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuICB0YWJsZSwgdGgsIHRkIHtcclxuICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XHJcbiAgICAgIGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7XHJcbiAgfVxyXG4gIHRoLCB0ZCB7XHJcbiAgICAgIHBhZGRpbmc6IDVweDtcclxuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIH1cclxuICB0aCB7XHJcbiAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIH1cclxuICB0ZCB7XHJcbiAgICBmb250LXNpemU6IDQwcHg7XHJcbiAgfSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/team/team.component.html":
+/*!******************************************!*\
+  !*** ./src/app/team/team.component.html ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<div id=\"TeamDiv\">\n    <h2>TEAMS LIST</h2>\n</div>\n<div  style=\"margin-top: 2em;\">\n  <table>\n    <tr>\n        <th>LOGO</th>\n        <th>Team</th>\n        <th>Detail1</th>\n        <th>Detail</th>\n      </tr>\n      \n    \n      <tr *ngFor=\"let team of teams\">\n        <td><img src=\"https://squiggle.com.au/{{team.logo}}\"></td>\n        <td>{{team.name || uppercase}}</td>\n        <td><button type=\"button\" (onclick)=\"onSelect(team)\">Stats</button></td>\n        <td><button type=\"button\" (onclick)=\"onSelect(team)\"> Leader</button> </td>\n    \n      </tr>\n    \n      \n    \n    </table>\n \n </div>\n "
+
+/***/ }),
+
+/***/ "./src/app/team/team.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/team/team.component.ts ***!
+  \****************************************/
+/*! exports provided: TeamComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeamComponent", function() { return TeamComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _data_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data-service.service */ "./src/app/data-service.service.ts");
+
+
+
+var TeamComponent = /** @class */ (function () {
+    function TeamComponent(dataService) {
+        this.dataService = dataService;
+    }
+    TeamComponent.prototype.ngOnInit = function () {
+        this.getAFLTeams();
+    };
+    TeamComponent.prototype.onSelect = function (team) {
+        this.selectedTeam = team;
+    };
+    TeamComponent.prototype.getAFLTeams = function () {
+        var _this = this;
+        this.dataService.getTeams("https://api.squiggle.com.au/?q=teams").subscribe(function (temp) { _this.teams = temp; });
+    };
+    TeamComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-team',
+            template: __webpack_require__(/*! ./team.component.html */ "./src/app/team/team.component.html"),
+            styles: [__webpack_require__(/*! ./team.component.css */ "./src/app/team/team.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_data_service_service__WEBPACK_IMPORTED_MODULE_2__["DataServiceService"]])
+    ], TeamComponent);
+    return TeamComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/teamchild/teamchild.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/teamchild/teamchild.component.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "table {\r\n\twidth:100%;\r\n\tbackground-color: gainsboro;\r\n}\r\n\r\n\r\ntable, td, th {\r\n\r\n\ttext-align: center;\r\n\tborder-style: solid;\r\n\tborder-width: 2px;\r\n\tborder-color: black;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGVhbWNoaWxkL3RlYW1jaGlsZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0NBQ0MsVUFBVTtDQUNWLDJCQUEyQjtBQUM1Qjs7O0FBR0E7O0NBRUMsa0JBQWtCO0NBQ2xCLG1CQUFtQjtDQUNuQixpQkFBaUI7Q0FDakIsbUJBQW1CO0FBQ3BCIiwiZmlsZSI6InNyYy9hcHAvdGVhbWNoaWxkL3RlYW1jaGlsZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsidGFibGUge1xyXG5cdHdpZHRoOjEwMCU7XHJcblx0YmFja2dyb3VuZC1jb2xvcjogZ2FpbnNib3JvO1xyXG59XHJcblxyXG5cclxudGFibGUsIHRkLCB0aCB7XHJcblxyXG5cdHRleHQtYWxpZ246IGNlbnRlcjtcclxuXHRib3JkZXItc3R5bGU6IHNvbGlkO1xyXG5cdGJvcmRlci13aWR0aDogMnB4O1xyXG5cdGJvcmRlci1jb2xvcjogYmxhY2s7XHJcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/teamchild/teamchild.component.html":
+/*!****************************************************!*\
+  !*** ./src/app/teamchild/teamchild.component.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"TeamChildDiv\">\n    <div *ngIf=\"team\">\n      <table>\n        <tr>\n            <th>ID</th>\n            <th>Team</th>\n            <th>Logo</th>\n      </tr>\n    \n      <tr>\n          <td>{{team.id}}</td>\n          <td>{{team.name}}</td>\n          <td><img src=\"https://squiggle.com.au/{{team.logo}}\"></td>\n      </tr>\n      </table>\n      \n    </div>\n    </div>"
+
+/***/ }),
+
+/***/ "./src/app/teamchild/teamchild.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/teamchild/teamchild.component.ts ***!
+  \**************************************************/
+/*! exports provided: TeamchildComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeamchildComponent", function() { return TeamchildComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _team__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../team */ "./src/app/team.ts");
+
+
+
+var TeamchildComponent = /** @class */ (function () {
+    function TeamchildComponent() {
+    }
+    TeamchildComponent.prototype.ngOnChanges = function () {
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _team__WEBPACK_IMPORTED_MODULE_2__["Team"])
+    ], TeamchildComponent.prototype, "team", void 0);
+    TeamchildComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-teamchild',
+            template: __webpack_require__(/*! ./teamchild.component.html */ "./src/app/teamchild/teamchild.component.html"),
+            styles: [__webpack_require__(/*! ./teamchild.component.css */ "./src/app/teamchild/teamchild.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], TeamchildComponent);
+    return TeamchildComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/test-git/test-git.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/test-git/test-git.component.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "table {\r\n\twidth:100%;\r\n\tbackground-color: gainsboro;\r\n}\r\n\r\n\r\ntable, td, th {\r\n\r\n\ttext-align: center;\r\n\tborder-style: solid;\r\n\tborder-width: 2px;\r\n\tborder-color: black;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGVzdC1naXQvdGVzdC1naXQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtDQUNDLFVBQVU7Q0FDViwyQkFBMkI7QUFDNUI7OztBQUdBOztDQUVDLGtCQUFrQjtDQUNsQixtQkFBbUI7Q0FDbkIsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQiIsImZpbGUiOiJzcmMvYXBwL3Rlc3QtZ2l0L3Rlc3QtZ2l0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJ0YWJsZSB7XHJcblx0d2lkdGg6MTAwJTtcclxuXHRiYWNrZ3JvdW5kLWNvbG9yOiBnYWluc2Jvcm87XHJcbn1cclxuXHJcblxyXG50YWJsZSwgdGQsIHRoIHtcclxuXHJcblx0dGV4dC1hbGlnbjogY2VudGVyO1xyXG5cdGJvcmRlci1zdHlsZTogc29saWQ7XHJcblx0Ym9yZGVyLXdpZHRoOiAycHg7XHJcblx0Ym9yZGVyLWNvbG9yOiBibGFjaztcclxufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/test-git/test-git.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/test-git/test-git.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n    <div *ngIf=\"game\">\n      <table>\n        <tr>\n            <th>ID</th>\n            <th>Team</th>\n            <th>Logo</th>\n      </tr>\n    \n      <tr>\n          <td>{{game.round}}</td>\n          <td>{{game.hteam}}</td>\n          <td>{{game.ateam}}</td>\n          \n      </tr>\n      </table>\n      \n    </div>\n    "
+
+/***/ }),
+
+/***/ "./src/app/test-git/test-git.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/test-git/test-git.component.ts ***!
+  \************************************************/
+/*! exports provided: TestGitComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TestGitComponent", function() { return TestGitComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _game__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../game */ "./src/app/game.ts");
+
+
+
+var TestGitComponent = /** @class */ (function () {
+    function TestGitComponent() {
+    }
+    TestGitComponent.prototype.ngOnChanges = function () {
+    };
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", _game__WEBPACK_IMPORTED_MODULE_2__["Game"])
+    ], TestGitComponent.prototype, "game", void 0);
+    TestGitComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-test-git',
+            template: __webpack_require__(/*! ./test-git.component.html */ "./src/app/test-git/test-git.component.html"),
+            styles: [__webpack_require__(/*! ./test-git.component.css */ "./src/app/test-git/test-git.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], TestGitComponent);
+    return TestGitComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/tip.ts":
+/*!************************!*\
+  !*** ./src/app/tip.ts ***!
+  \************************/
+/*! exports provided: Tip */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Tip", function() { return Tip; });
+var Tip = /** @class */ (function () {
+    function Tip(confidence, bits, gameid, ateamid, venue, year, correct, date, updated, hteam, tipteamid, margin, err, tip, ateam, source, sourceid, hconfidence, hteamid, round) {
+        this.confidence = confidence;
+        this.bits = bits;
+        this.gameid = gameid;
+        this.ateamid = ateamid;
+        this.venue = venue;
+        this.year = year;
+        this.correct = correct;
+        this.date = date;
+        this.updated = updated;
+        this.hteam = hteam;
+        this.tipteamid = tipteamid;
+        this.margin = margin;
+        this.err = err;
+        this.tip = tip;
+        this.ateam = ateam;
+        this.source = source;
+        this.sourceid = sourceid;
+        this.hconfidence = hconfidence;
+        this.hteamid = hteamid;
+        this.round = round;
+    }
+    return Tip;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/tip/tip.component.css":
+/*!***************************************!*\
+  !*** ./src/app/tip/tip.component.css ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "table {\r\n    font-family: arial, sans-serif;\r\n    border-collapse: collapse;\r\n    width: 100%;\r\n  }\r\n    table, th, td {\r\n        border: 1px solid black;\r\n        border-collapse: collapse;\r\n    }\r\n    th, td {\r\n        padding: 5px;\r\n        text-align: center;\r\n    }\r\n    th {\r\n        text-align: center;\r\n      }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGlwL3RpcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksOEJBQThCO0lBQzlCLHlCQUF5QjtJQUN6QixXQUFXO0VBQ2I7SUFDRTtRQUNJLHVCQUF1QjtRQUN2Qix5QkFBeUI7SUFDN0I7SUFDQTtRQUNJLFlBQVk7UUFDWixrQkFBa0I7SUFDdEI7SUFDQTtRQUNJLGtCQUFrQjtNQUNwQiIsImZpbGUiOiJzcmMvYXBwL3RpcC90aXAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbInRhYmxlIHtcclxuICAgIGZvbnQtZmFtaWx5OiBhcmlhbCwgc2Fucy1zZXJpZjtcclxuICAgIGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICB9XHJcbiAgICB0YWJsZSwgdGgsIHRkIHtcclxuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcclxuICAgICAgICBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlO1xyXG4gICAgfVxyXG4gICAgdGgsIHRkIHtcclxuICAgICAgICBwYWRkaW5nOiA1cHg7XHJcbiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgfVxyXG4gICAgdGgge1xyXG4gICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgICAgfSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/tip/tip.component.html":
+/*!****************************************!*\
+  !*** ./src/app/tip/tip.component.html ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div>\n  <table style=\"text-align: center;\">\n\n      <tr><th>Home Team</th><th>Away Team</th><th>Tip</th><th>Source</th></tr>\n      \n    \n      <tr *ngFor=\"let t of tips\">\n    \n        <td>{{t.hteam}}</td>\n        <td>{{t.ateam}}</td>\n        <td>{{t.tip}}</td>\n        <td>{{t.source}}</td>   \n    \n      </tr>\n    \n      \n    \n    </table>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/tip/tip.component.ts":
+/*!**************************************!*\
+  !*** ./src/app/tip/tip.component.ts ***!
+  \**************************************/
+/*! exports provided: TipComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TipComponent", function() { return TipComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _tipdata__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tipdata */ "./src/app/tipdata.ts");
+
+
+
+var TipComponent = /** @class */ (function () {
+    function TipComponent(tipData) {
+        this.tipData = tipData;
+    }
+    TipComponent.prototype.ngOnInit = function () {
+        this.getTips();
+    };
+    TipComponent.prototype.getTips = function () {
+        var _this = this;
+        this.tipData.getTips().subscribe(function (temp) { _this.tips = temp; });
+    };
+    TipComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-tip',
+            template: __webpack_require__(/*! ./tip.component.html */ "./src/app/tip/tip.component.html"),
+            styles: [__webpack_require__(/*! ./tip.component.css */ "./src/app/tip/tip.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_tipdata__WEBPACK_IMPORTED_MODULE_2__["TipData"]])
+    ], TipComponent);
+    return TipComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/tipdata.ts":
+/*!****************************!*\
+  !*** ./src/app/tipdata.ts ***!
+  \****************************/
+/*! exports provided: TipData */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TipData", function() { return TipData; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _tip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./tip */ "./src/app/tip.ts");
+
+
+
+
+
+var TipData = /** @class */ (function () {
+    function TipData(http) {
+        this.http = http;
+    }
+    TipData.prototype.getTips = function () {
+        return this.http.get('https://api.squiggle.com.au/?q=tips;year=2019;source=1').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (data) { return data.tips.map(function (item) { return new _tip__WEBPACK_IMPORTED_MODULE_4__["Tip"](item.confidence, item.bits, item.gameid, item.ateamid, item.venue, item.year, item.correct, item.date, item.updated, item.hteam, item.tipteamid, item.margin, item.err, item.tip, item.ateam, item.source, item.sourceid, item.hconfidence, item.hteamid, item.round); }); }));
+    };
+    TipData = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClient"]])
+    ], TipData);
+    return TipData;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/view-game-table/view-game-table.component.css":
+/*!***************************************************************!*\
+  !*** ./src/app/view-game-table/view-game-table.component.css ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/* .wrapper {\r\n  display: grid;\r\n  grid-template-columns: auto auto auto auto auto;\r\n  grid-gap: 15px ;\r\n  border: 2px solid #131211;\r\n  overflow-x: auto;\r\n  overflow-y: hidden;\r\n  font-size: auto;\r\n  grid-template-rows: auto;\r\n}\r\n\r\nspan {\r\n  color: black;\r\n  background-color: red;\r\n  margin-left: 1em;\r\n  margin-right: 2px;\r\n  font-size: 30px;\r\n}\r\n\r\nh1 {\r\n  margin-left: 5em;\r\n}\r\n\r\n.round {\r\n  display: inline-block;\r\n  text-align: right;\r\n  font-size: 30px;\r\n}\r\n\r\n/* img {\r\n  height: 10em;\r\n  width: 11em;\r\n  align-content: center;\r\n} */\r\n\r\n/* .score {\r\n  text-align: center;\r\n  margin-top: 1em;\r\n  font-size: 50px;\r\n} */\r\n\r\n/* * {\r\n  box-sizing: border-box;\r\n}\r\n\r\n.wrapper > div {\r\n  background: gray;\r\n  padding: 1em;\r\n} */\r\n\r\n/* .wrapper > div:nth-child(3) {\r\n  background: black;\r\n  color: #eee;\r\n}\r\n\r\n.wrapper > div:nth-child(1) {\r\n  background: red;\r\n  color: #eee;\r\n} */\r\n\r\n/* .wrapper > div:nth-child(5) {\r\n  background: BLUE;\r\n  color: #eee;\r\n} */\r\n\r\nul {\r\n  list-style-type: none;\r\n  margin: 0;\r\n  padding: 0;\r\n \r\n}\r\n\r\nli a {\r\n  display: block;\r\n  color: black;\r\n  text-align: center;\r\n  padding: 16px;\r\n  text-decoration: none;\r\n}\r\n\r\nli a:hover {\r\n  background-color: #f05353;\r\n}\r\n\r\nh1 {\r\n  text-align: center;\r\n  color: #f05353;\r\n  font-size: 60px;\r\n}\r\n\r\ntable {\r\n  font-family: arial, sans-serif;\r\n  border-collapse: collapse;\r\n  width: 100%;\r\n}\r\n\r\ntable, th, td {\r\n      border: 1px solid black;\r\n      border-collapse: collapse;\r\n  }\r\n\r\nth, td {\r\n      padding: 5px;\r\n      text-align: center;\r\n  }\r\n\r\nth {\r\n      text-align: center;\r\n    }\r\n\r\n*/\r\n  td{\r\n    font-size: 30px;\r\n  }\r\n\r\n#myInput {\r\n    background-image: url('/css/searchicon.png'); /* Add a search icon to input */\r\n    background-position: 10px 12px; /* Position the search icon */\r\n    background-repeat: no-repeat; /* Do not repeat the icon image */\r\n    width: 100%; /* Full-width */\r\n    font-size: 16px; /* Increase font-size */\r\n    padding: 12px 20px 12px 40px; /* Add some padding */\r\n    border: 1px solid white; /* Add a grey border */\r\n    margin-bottom: 12px; /* Add some space below the input */\r\n  }\r\n\r\n#myTable {\r\n    border-collapse: collapse; /* Collapse borders */\r\n    width: 100%; /* Full-width */\r\n    border: 1px solid white; /* Add a grey border */\r\n    font-size: 18px; /* Increase font-size */\r\n  }\r\n\r\n#myTable th, #myTable td {\r\n    text-align: center; \r\n    padding: 12px; /* Add padding */\r\n    background-color: white;\r\n  }\r\n\r\n#myTable tr {\r\n    /* Add a bottom border to all table rows */\r\n    border-bottom: 1px solid white; \r\n  }\r\n\r\n/* #myTable tr.header, #myTable tr:hover {\r\n    /* Add a grey background color to the table header and on hover */\r\n    \r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlldy1nYW1lLXRhYmxlL3ZpZXctZ2FtZS10YWJsZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7R0FpQ0c7O0FBRUg7Ozs7R0FJRzs7QUFFSDs7Ozs7OztHQU9HOztBQUVIOzs7Ozs7OztHQVFHOztBQUVIOzs7R0FHRzs7QUFJSDtFQUNFLHFCQUFxQjtFQUNyQixTQUFTO0VBQ1QsVUFBVTs7QUFFWjs7QUFJQTtFQUNFLGNBQWM7RUFDZCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGFBQWE7RUFDYixxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSx5QkFBeUI7QUFDM0I7O0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsY0FBYztFQUNkLGVBQWU7QUFDakI7O0FBRUE7RUFDRSw4QkFBOEI7RUFDOUIseUJBQXlCO0VBQ3pCLFdBQVc7QUFDYjs7QUFDRTtNQUNJLHVCQUF1QjtNQUN2Qix5QkFBeUI7RUFDN0I7O0FBQ0E7TUFDSSxZQUFZO01BQ1osa0JBQWtCO0VBQ3RCOztBQUNBO01BQ0ksa0JBQWtCO0lBQ3BCOztBQUFFOztJQUVGLGVBQWU7RUFDakI7O0FBQ0E7SUFDRSw0Q0FBNEMsRUFBRSwrQkFBK0I7SUFDN0UsOEJBQThCLEVBQUUsNkJBQTZCO0lBQzdELDRCQUE0QixFQUFFLGlDQUFpQztJQUMvRCxXQUFXLEVBQUUsZUFBZTtJQUM1QixlQUFlLEVBQUUsdUJBQXVCO0lBQ3hDLDRCQUE0QixFQUFFLHFCQUFxQjtJQUNuRCx1QkFBdUIsRUFBRSxzQkFBc0I7SUFDL0MsbUJBQW1CLEVBQUUsbUNBQW1DO0VBQzFEOztBQUVBO0lBQ0UseUJBQXlCLEVBQUUscUJBQXFCO0lBQ2hELFdBQVcsRUFBRSxlQUFlO0lBQzVCLHVCQUF1QixFQUFFLHNCQUFzQjtJQUMvQyxlQUFlLEVBQUUsdUJBQXVCO0VBQzFDOztBQUVBO0lBQ0Usa0JBQWtCO0lBQ2xCLGFBQWEsRUFBRSxnQkFBZ0I7SUFDL0IsdUJBQXVCO0VBQ3pCOztBQUVBO0lBQ0UsMENBQTBDO0lBQzFDLDhCQUE4QjtFQUNoQzs7QUFFQTtxRUFDbUUiLCJmaWxlIjoic3JjL2FwcC92aWV3LWdhbWUtdGFibGUvdmlldy1nYW1lLXRhYmxlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiAud3JhcHBlciB7XHJcbiAgZGlzcGxheTogZ3JpZDtcclxuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IGF1dG8gYXV0byBhdXRvIGF1dG8gYXV0bztcclxuICBncmlkLWdhcDogMTVweCA7XHJcbiAgYm9yZGVyOiAycHggc29saWQgIzEzMTIxMTtcclxuICBvdmVyZmxvdy14OiBhdXRvO1xyXG4gIG92ZXJmbG93LXk6IGhpZGRlbjtcclxuICBmb250LXNpemU6IGF1dG87XHJcbiAgZ3JpZC10ZW1wbGF0ZS1yb3dzOiBhdXRvO1xyXG59XHJcblxyXG5zcGFuIHtcclxuICBjb2xvcjogYmxhY2s7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmVkO1xyXG4gIG1hcmdpbi1sZWZ0OiAxZW07XHJcbiAgbWFyZ2luLXJpZ2h0OiAycHg7XHJcbiAgZm9udC1zaXplOiAzMHB4O1xyXG59XHJcblxyXG5oMSB7XHJcbiAgbWFyZ2luLWxlZnQ6IDVlbTtcclxufVxyXG5cclxuLnJvdW5kIHtcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgdGV4dC1hbGlnbjogcmlnaHQ7XHJcbiAgZm9udC1zaXplOiAzMHB4O1xyXG59XHJcblxyXG4vKiBpbWcge1xyXG4gIGhlaWdodDogMTBlbTtcclxuICB3aWR0aDogMTFlbTtcclxuICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XHJcbn0gKi9cclxuXHJcbi8qIC5zY29yZSB7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIG1hcmdpbi10b3A6IDFlbTtcclxuICBmb250LXNpemU6IDUwcHg7XHJcbn0gKi9cclxuXHJcbi8qICoge1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbn1cclxuXHJcbi53cmFwcGVyID4gZGl2IHtcclxuICBiYWNrZ3JvdW5kOiBncmF5O1xyXG4gIHBhZGRpbmc6IDFlbTtcclxufSAqL1xyXG5cclxuLyogLndyYXBwZXIgPiBkaXY6bnRoLWNoaWxkKDMpIHtcclxuICBiYWNrZ3JvdW5kOiBibGFjaztcclxuICBjb2xvcjogI2VlZTtcclxufVxyXG5cclxuLndyYXBwZXIgPiBkaXY6bnRoLWNoaWxkKDEpIHtcclxuICBiYWNrZ3JvdW5kOiByZWQ7XHJcbiAgY29sb3I6ICNlZWU7XHJcbn0gKi9cclxuXHJcbi8qIC53cmFwcGVyID4gZGl2Om50aC1jaGlsZCg1KSB7XHJcbiAgYmFja2dyb3VuZDogQkxVRTtcclxuICBjb2xvcjogI2VlZTtcclxufSAqL1xyXG5cclxuXHJcbiBcclxudWwge1xyXG4gIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcclxuICBtYXJnaW46IDA7XHJcbiAgcGFkZGluZzogMDtcclxuIFxyXG59XHJcblxyXG5cclxuXHJcbmxpIGEge1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIGNvbG9yOiBibGFjaztcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgcGFkZGluZzogMTZweDtcclxuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbn1cclxuXHJcbmxpIGE6aG92ZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNmMDUzNTM7XHJcbn1cclxuaDEge1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBjb2xvcjogI2YwNTM1MztcclxuICBmb250LXNpemU6IDYwcHg7XHJcbn1cclxuXHJcbnRhYmxlIHtcclxuICBmb250LWZhbWlseTogYXJpYWwsIHNhbnMtc2VyaWY7XHJcbiAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG4gIHRhYmxlLCB0aCwgdGQge1xyXG4gICAgICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcclxuICAgICAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTtcclxuICB9XHJcbiAgdGgsIHRkIHtcclxuICAgICAgcGFkZGluZzogNXB4O1xyXG4gICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgfVxyXG4gIHRoIHtcclxuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgfSAqL1xyXG4gIHRke1xyXG4gICAgZm9udC1zaXplOiAzMHB4O1xyXG4gIH1cclxuICAjbXlJbnB1dCB7XHJcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy9jc3Mvc2VhcmNoaWNvbi5wbmcnKTsgLyogQWRkIGEgc2VhcmNoIGljb24gdG8gaW5wdXQgKi9cclxuICAgIGJhY2tncm91bmQtcG9zaXRpb246IDEwcHggMTJweDsgLyogUG9zaXRpb24gdGhlIHNlYXJjaCBpY29uICovXHJcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0OyAvKiBEbyBub3QgcmVwZWF0IHRoZSBpY29uIGltYWdlICovXHJcbiAgICB3aWR0aDogMTAwJTsgLyogRnVsbC13aWR0aCAqL1xyXG4gICAgZm9udC1zaXplOiAxNnB4OyAvKiBJbmNyZWFzZSBmb250LXNpemUgKi9cclxuICAgIHBhZGRpbmc6IDEycHggMjBweCAxMnB4IDQwcHg7IC8qIEFkZCBzb21lIHBhZGRpbmcgKi9cclxuICAgIGJvcmRlcjogMXB4IHNvbGlkIHdoaXRlOyAvKiBBZGQgYSBncmV5IGJvcmRlciAqL1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMTJweDsgLyogQWRkIHNvbWUgc3BhY2UgYmVsb3cgdGhlIGlucHV0ICovXHJcbiAgfVxyXG4gIFxyXG4gICNteVRhYmxlIHtcclxuICAgIGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7IC8qIENvbGxhcHNlIGJvcmRlcnMgKi9cclxuICAgIHdpZHRoOiAxMDAlOyAvKiBGdWxsLXdpZHRoICovXHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCB3aGl0ZTsgLyogQWRkIGEgZ3JleSBib3JkZXIgKi9cclxuICAgIGZvbnQtc2l6ZTogMThweDsgLyogSW5jcmVhc2UgZm9udC1zaXplICovXHJcbiAgfVxyXG4gIFxyXG4gICNteVRhYmxlIHRoLCAjbXlUYWJsZSB0ZCB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7IFxyXG4gICAgcGFkZGluZzogMTJweDsgLyogQWRkIHBhZGRpbmcgKi9cclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gIH1cclxuICBcclxuICAjbXlUYWJsZSB0ciB7XHJcbiAgICAvKiBBZGQgYSBib3R0b20gYm9yZGVyIHRvIGFsbCB0YWJsZSByb3dzICovXHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgd2hpdGU7IFxyXG4gIH1cclxuICBcclxuICAvKiAjbXlUYWJsZSB0ci5oZWFkZXIsICNteVRhYmxlIHRyOmhvdmVyIHtcclxuICAgIC8qIEFkZCBhIGdyZXkgYmFja2dyb3VuZCBjb2xvciB0byB0aGUgdGFibGUgaGVhZGVyIGFuZCBvbiBob3ZlciAqL1xyXG4gICAgXHJcbiAgIl19 */"
+
+/***/ }),
+
+/***/ "./src/app/view-game-table/view-game-table.component.html":
+/*!****************************************************************!*\
+  !*** ./src/app/view-game-table/view-game-table.component.html ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- <div\n  id=\"spinner\"\n  *ngIf=\"showSpinner\"\n  class=\"spinner-border text-danger m-5\"\n  style=\"width: 3rem; height: 3rem;\"\n  role=\"status\"\n>\n  <span class=\"sr-only\">Loading...</span>\n</div>\n<div ><input type=\"text\" id=\"myInput\" (keyup)=\"myFunction1()\" placeholder=\"Search for Home Team..\">\n<div *ngFor=\"let game of games\" style=\"margin-top: 2em;\">\n  \n  <p class=\"round\">\n    <span>Round: </span>{{ game.round }}<span> Winner: </span>{{ game.winner }}\n  </p>\n  <div class=\"wrapper\" id=\"myInput\">\n    <div>\n      {{ game.hteam }}\n        <div [ngSwitch]=\"game?.hteam\">\n          <img\n            *ngSwitchDefault\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.hteam}}.jpg\"\n          />\n          <img\n            *ngSwitchCase=\"'North Melbourne'\"\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/NorthMelbourne.jpg\"\n          />\n          <img\n            *ngSwitchCase=\"'St Kilda'\"\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/StKilda.jpg\"\n          />\n          <img\n            *ngSwitchCase=\"'Gold Coast'\"\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/GoldCoast.jpg\"\n          />\n          <img\n            *ngSwitchCase=\"'Western Bulldogs'\"\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Bulldogs.jpg\"\n          />\n          <img\n            *ngSwitchCase=\"'West Coast'\"\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/WestCoast.jpg\"\n          />\n          <img\n            *ngSwitchCase=\"'Port Adelaide'\"\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/PortAdelaide.jpg\"\n          />\n          <img\n            *ngSwitchCase=\"'Greater Western Sydney'\"\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Giants.jpg\"\n          />\n        </div>\n    </div>\n    <div>\n      <p class=\"score\">\n        {{ game.hscore }}\n      </p>\n    </div>\n    <div>\n      <p class=\"score\">\n        VS\n      </p>\n    </div>\n    <div>\n      <p class=\"score\">\n        {{ game.ascore }}\n      </p>\n    </div>\n    <div>\n      {{ game.ateam }}\n        <div [ngSwitch]=\"game?.ateam\">\n          <img\n            *ngSwitchDefault\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.ateam}}.jpg\"\n          />\n          <img\n            *ngSwitchCase=\"'North Melbourne'\"\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/NorthMelbourne.jpg\"\n          />\n          <img\n            *ngSwitchCase=\"'Gold Coast'\"\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/GoldCoast.jpg\"\n          />\n          <img\n            *ngSwitchCase=\"'St Kilda'\"\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/StKilda.jpg\"\n          />\n          <img\n            *ngSwitchCase=\"'Western Bulldogs'\"\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Bulldogs.jpg\"\n          />\n          <img\n            *ngSwitchCase=\"'West Coast'\"\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/WestCoast.jpg\"\n          />\n          <img\n            *ngSwitchCase=\"'Port Adelaide'\"\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/PortAdelaide.jpg\"\n          />\n          <img\n            *ngSwitchCase=\"'Greater Western Sydney'\"\n            src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Giants.jpg\"\n          />\n        </div>\n    </div>\n  </div>\n</div>\n</div> -->\n\n\n<div style=\"margin-top: 2em;\">\n    <input type=\"text\" id=\"myInput\" (keyup)=\"myFunction1()\" placeholder=\"Search for HOME Team..\">\n    \n          <table id=\"myTable\">\n          \n              <tr class=\"header\">\n                <th style=\"width:5%;\">Round</th>\n                <th style=\"width:10%;\">HOME Team</th>\n                <th style=\"width:5%;\">VS</th>\n                <th style=\"width:10%;\">AWAY Team</th>\n                <th style=\"width:10%;\">Winner</th>\n              </tr>\n              <tr  *ngFor=\"let game of games\" >\n                <td>{{ game.round }}</td>\n                <td>{{game.hteam}}<img \n                  src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.hteam == 'Western Bulldogs'? 'Bulldogs':game.hteam || 'Greater Western Sydney'?'Giants':game.hteam || game.hteam}}.jpg\" ></td>\n                <td>{{game.hscore}}--{{game.ascore}}</td>\n                <td>\n                    {{game.ateam}}<img src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.ateam == 'Western Bulldogs'? 'Bulldogs':game.ateam}}.jpg\" >\n                  </td>\n                <td>{{ game.winner }}<img src=\"https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.winner == 'Western Bulldogs'? 'Bulldogs':game.winner}}.jpg\"></td>\n              </tr>\n            </table>\n  </div>\n\n\n    "
+
+/***/ }),
+
+/***/ "./src/app/view-game-table/view-game-table.component.ts":
+/*!**************************************************************!*\
+  !*** ./src/app/view-game-table/view-game-table.component.ts ***!
+  \**************************************************************/
+/*! exports provided: ViewGameTableComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ViewGameTableComponent", function() { return ViewGameTableComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _data_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data-service.service */ "./src/app/data-service.service.ts");
+
+
+
+var ViewGameTableComponent = /** @class */ (function () {
+    //  games:Game[];
+    //  teams:Team[];
+    function ViewGameTableComponent(dataService) {
+        this.dataService = dataService;
+    }
+    ViewGameTableComponent.prototype.ngOnInit = function () {
+        this.getGames();
+        this.getAFLTeams();
+    };
+    ViewGameTableComponent.prototype.getGames = function () {
+        var _this = this;
+        this.showSpinner = true;
+        this.dataService.getGames("https://api.squiggle.com.au/?q=games;year=2019")
+            .subscribe(function (temp) {
+            _this.games = temp
+                .filter(function (team) {
+                return (team.complete == 100 && team.ateam) ||
+                    (team.complete == 100 && team.hteam);
+            });
+        })
+            .add(function () { return (_this.showSpinner = false); });
+    };
+    ViewGameTableComponent.prototype.getAFLTeams = function () {
+        var _this = this;
+        this.dataService.getTeams("https://api.squiggle.com.au/?q=teams").subscribe(function (temp) { _this.teams = temp; });
+    };
+    ViewGameTableComponent.prototype.myFunction1 = function () {
+        // Declare variables 
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                }
+                else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    };
+    ViewGameTableComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-view-game-table',
+            template: __webpack_require__(/*! ./view-game-table.component.html */ "./src/app/view-game-table/view-game-table.component.html"),
+            styles: [__webpack_require__(/*! ./view-game-table.component.css */ "./src/app/view-game-table/view-game-table.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_data_service_service__WEBPACK_IMPORTED_MODULE_2__["DataServiceService"]])
+    ], ViewGameTableComponent);
+    return ViewGameTableComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/view-league-table/view-league-table.component.css":
+/*!*******************************************************************!*\
+  !*** ./src/app/view-league-table/view-league-table.component.css ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = " \r\nul {\r\n  list-style-type: none;\r\n  margin: 0;\r\n  padding: 0;\r\n \r\n}\r\n\r\n\r\n\r\nli a {\r\n  display: block;\r\n  color: black;\r\n  text-align: center;\r\n  padding: 16px;\r\n  text-decoration: none;\r\n}\r\n\r\n\r\n\r\nli a:hover {\r\n  background-color: #f05353;\r\n}\r\n\r\n\r\n\r\nh1 {\r\n  text-align: center;\r\n  color: #f05353;\r\n  font-size: 60px;\r\n}\r\n\r\n\r\n\r\ntable {\r\n  font-family: arial, sans-serif;\r\n  border-collapse: collapse;\r\n  width: 100%;\r\n}\r\n\r\n\r\n\r\ntable, th, td {\r\n      border: 1px solid black;\r\n      border-collapse: collapse;\r\n  }\r\n\r\n\r\n\r\nth, td {\r\n      padding: 5px;\r\n      text-align: center;\r\n  }\r\n\r\n\r\n\r\nth {\r\n      text-align: center;\r\n    }\r\n\r\n\r\n\r\n*/\r\n  td{\r\n    font-size: 30px;\r\n  }\r\n\r\n\r\n\r\n#myInput {\r\n    background-image: url('/css/searchicon.png'); /* Add a search icon to input */\r\n    background-position: 10px 12px; /* Position the search icon */\r\n    background-repeat: no-repeat; /* Do not repeat the icon image */\r\n    width: 100%; /* Full-width */\r\n    font-size: 16px; /* Increase font-size */\r\n    padding: 12px 20px 12px 40px; /* Add some padding */\r\n    border: 1px solid white; /* Add a grey border */\r\n    margin-bottom: 12px; /* Add some space below the input */\r\n  }\r\n\r\n\r\n\r\n#myTable {\r\n    border-collapse: collapse; /* Collapse borders */\r\n    width: 100%; /* Full-width */\r\n    border: 1px solid white; /* Add a grey border */\r\n    font-size: 18px; /* Increase font-size */\r\n  }\r\n\r\n\r\n\r\n#myTable th, #myTable td {\r\n    text-align: center; \r\n    padding: 12px; /* Add padding */\r\n    background-color: white;\r\n  }\r\n\r\n\r\n\r\n#myTable tr {\r\n    /* Add a bottom border to all table rows */\r\n    border-bottom: 1px solid white; \r\n  }\r\n\r\n\r\n\r\n/* #myTable tr.header, #myTable tr:hover {\r\n    /* Add a grey background color to the table header and on hover */\r\n    \r\n  \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdmlldy1sZWFndWUtdGFibGUvdmlldy1sZWFndWUtdGFibGUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0E7RUFDRSxxQkFBcUI7RUFDckIsU0FBUztFQUNULFVBQVU7O0FBRVo7Ozs7QUFJQTtFQUNFLGNBQWM7RUFDZCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGFBQWE7RUFDYixxQkFBcUI7QUFDdkI7Ozs7QUFFQTtFQUNFLHlCQUF5QjtBQUMzQjs7OztBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxlQUFlO0FBQ2pCOzs7O0FBRUE7RUFDRSw4QkFBOEI7RUFDOUIseUJBQXlCO0VBQ3pCLFdBQVc7QUFDYjs7OztBQUNFO01BQ0ksdUJBQXVCO01BQ3ZCLHlCQUF5QjtFQUM3Qjs7OztBQUNBO01BQ0ksWUFBWTtNQUNaLGtCQUFrQjtFQUN0Qjs7OztBQUNBO01BQ0ksa0JBQWtCO0lBQ3BCOzs7O0FBQUU7O0lBRUYsZUFBZTtFQUNqQjs7OztBQUNBO0lBQ0UsNENBQTRDLEVBQUUsK0JBQStCO0lBQzdFLDhCQUE4QixFQUFFLDZCQUE2QjtJQUM3RCw0QkFBNEIsRUFBRSxpQ0FBaUM7SUFDL0QsV0FBVyxFQUFFLGVBQWU7SUFDNUIsZUFBZSxFQUFFLHVCQUF1QjtJQUN4Qyw0QkFBNEIsRUFBRSxxQkFBcUI7SUFDbkQsdUJBQXVCLEVBQUUsc0JBQXNCO0lBQy9DLG1CQUFtQixFQUFFLG1DQUFtQztFQUMxRDs7OztBQUVBO0lBQ0UseUJBQXlCLEVBQUUscUJBQXFCO0lBQ2hELFdBQVcsRUFBRSxlQUFlO0lBQzVCLHVCQUF1QixFQUFFLHNCQUFzQjtJQUMvQyxlQUFlLEVBQUUsdUJBQXVCO0VBQzFDOzs7O0FBRUE7SUFDRSxrQkFBa0I7SUFDbEIsYUFBYSxFQUFFLGdCQUFnQjtJQUMvQix1QkFBdUI7RUFDekI7Ozs7QUFFQTtJQUNFLDBDQUEwQztJQUMxQyw4QkFBOEI7RUFDaEM7Ozs7QUFFQTtxRUFDbUUiLCJmaWxlIjoic3JjL2FwcC92aWV3LWxlYWd1ZS10YWJsZS92aWV3LWxlYWd1ZS10YWJsZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiIFxyXG51bCB7XHJcbiAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xyXG4gIG1hcmdpbjogMDtcclxuICBwYWRkaW5nOiAwO1xyXG4gXHJcbn1cclxuXHJcblxyXG5cclxubGkgYSB7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgY29sb3I6IGJsYWNrO1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBwYWRkaW5nOiAxNnB4O1xyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufVxyXG5cclxubGkgYTpob3ZlciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2YwNTM1MztcclxufVxyXG5oMSB7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIGNvbG9yOiAjZjA1MzUzO1xyXG4gIGZvbnQtc2l6ZTogNjBweDtcclxufVxyXG5cclxudGFibGUge1xyXG4gIGZvbnQtZmFtaWx5OiBhcmlhbCwgc2Fucy1zZXJpZjtcclxuICBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcbiAgdGFibGUsIHRoLCB0ZCB7XHJcbiAgICAgIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xyXG4gICAgICBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlO1xyXG4gIH1cclxuICB0aCwgdGQge1xyXG4gICAgICBwYWRkaW5nOiA1cHg7XHJcbiAgICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB9XHJcbiAgdGgge1xyXG4gICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICB9ICovXHJcbiAgdGR7XHJcbiAgICBmb250LXNpemU6IDMwcHg7XHJcbiAgfVxyXG4gICNteUlucHV0IHtcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnL2Nzcy9zZWFyY2hpY29uLnBuZycpOyAvKiBBZGQgYSBzZWFyY2ggaWNvbiB0byBpbnB1dCAqL1xyXG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogMTBweCAxMnB4OyAvKiBQb3NpdGlvbiB0aGUgc2VhcmNoIGljb24gKi9cclxuICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7IC8qIERvIG5vdCByZXBlYXQgdGhlIGljb24gaW1hZ2UgKi9cclxuICAgIHdpZHRoOiAxMDAlOyAvKiBGdWxsLXdpZHRoICovXHJcbiAgICBmb250LXNpemU6IDE2cHg7IC8qIEluY3JlYXNlIGZvbnQtc2l6ZSAqL1xyXG4gICAgcGFkZGluZzogMTJweCAyMHB4IDEycHggNDBweDsgLyogQWRkIHNvbWUgcGFkZGluZyAqL1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQgd2hpdGU7IC8qIEFkZCBhIGdyZXkgYm9yZGVyICovXHJcbiAgICBtYXJnaW4tYm90dG9tOiAxMnB4OyAvKiBBZGQgc29tZSBzcGFjZSBiZWxvdyB0aGUgaW5wdXQgKi9cclxuICB9XHJcbiAgXHJcbiAgI215VGFibGUge1xyXG4gICAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsgLyogQ29sbGFwc2UgYm9yZGVycyAqL1xyXG4gICAgd2lkdGg6IDEwMCU7IC8qIEZ1bGwtd2lkdGggKi9cclxuICAgIGJvcmRlcjogMXB4IHNvbGlkIHdoaXRlOyAvKiBBZGQgYSBncmV5IGJvcmRlciAqL1xyXG4gICAgZm9udC1zaXplOiAxOHB4OyAvKiBJbmNyZWFzZSBmb250LXNpemUgKi9cclxuICB9XHJcbiAgXHJcbiAgI215VGFibGUgdGgsICNteVRhYmxlIHRkIHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjsgXHJcbiAgICBwYWRkaW5nOiAxMnB4OyAvKiBBZGQgcGFkZGluZyAqL1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgfVxyXG4gIFxyXG4gICNteVRhYmxlIHRyIHtcclxuICAgIC8qIEFkZCBhIGJvdHRvbSBib3JkZXIgdG8gYWxsIHRhYmxlIHJvd3MgKi9cclxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCB3aGl0ZTsgXHJcbiAgfVxyXG4gIFxyXG4gIC8qICNteVRhYmxlIHRyLmhlYWRlciwgI215VGFibGUgdHI6aG92ZXIge1xyXG4gICAgLyogQWRkIGEgZ3JleSBiYWNrZ3JvdW5kIGNvbG9yIHRvIHRoZSB0YWJsZSBoZWFkZXIgYW5kIG9uIGhvdmVyICovXHJcbiAgICBcclxuICAiXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/view-league-table/view-league-table.component.html":
+/*!********************************************************************!*\
+  !*** ./src/app/view-league-table/view-league-table.component.html ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div >\n    <h1>TEAM</h1>\n    <input type=\"text\" id=\"myInput\" (keyup)=\"myFunction()\" placeholder=\"Search for names..\">\n    \n          <table id=\"myTable\">\n              <tr class=\"header\">\n                <th style=\"width:5%;\">ID</th>\n                <th style=\"width:30%;\">TEAM NAME</th>\n                <th style=\"width:45%;\">LOGO</th>\n                <th style=\"width:10%;\">detail1</th>\n                <th style=\"width:10%;\">detail2</th>\n              </tr>\n              <tr *ngFor=\"let team of teams\">\n                <td>{{team.id}}</td>\n                <td>{{team.name}}</td>\n                <td><img src=\"https://squiggle.com.au/{{team.logo}}\"></td>\n                <td>\n                  <button type=\"button\" (click)=\"onSelectTeam(team)\">detail</button>\n                </td>\n                <td>\n                    <button type=\"button\" (click)=\"onSelectGame(game)\">detail2</button>\n                  </td>\n              </tr>\n            </table>\n  </div>\n<div><app-teamchild [team]=\"selectedTeam\"></app-teamchild></div>\n<div><app-test-git [game]=\"selectedGame\"></app-test-git></div>\n    "
+
+/***/ }),
+
+/***/ "./src/app/view-league-table/view-league-table.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/view-league-table/view-league-table.component.ts ***!
+  \******************************************************************/
+/*! exports provided: ViewLeagueTableComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ViewLeagueTableComponent", function() { return ViewLeagueTableComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _data_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data-service.service */ "./src/app/data-service.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+
+var ViewLeagueTableComponent = /** @class */ (function () {
+    function ViewLeagueTableComponent(dataService, route) {
+        this.dataService = dataService;
+        this.route = route;
+    }
+    ViewLeagueTableComponent.prototype.ngOnInit = function () {
+        this.getAFLTeams();
+    };
+    ViewLeagueTableComponent.prototype.onSelectTeam = function (team) {
+        this.selectedTeam = team;
+        // this.route.navigate(["/teamchild"])
+    };
+    ViewLeagueTableComponent.prototype.getAFLTeams = function () {
+        var _this = this;
+        this.dataService.getTeams('https://api.squiggle.com.au/?q=teams').subscribe(function (temp) { _this.teams = temp; });
+    };
+    ViewLeagueTableComponent.prototype.onSelectGame = function (game) {
+        this.selectedGame = game;
+    };
+    // getGames(): void {
+    //   this.showSpinner = true;
+    //   this.dataService.getGames("https://api.squiggle.com.au/?q=games;year=2019")
+    //   .subscribe(temp => {this.games = temp.filter(
+    //     (team: any) =>
+    //       (team.complete == 100 && team.ateam ) ||
+    //       (team.complete == 100 && team.hteam )
+    //   );})
+    //     .add(() => (this.showSpinner = false));
+    // }
+    ViewLeagueTableComponent.prototype.getGames = function () {
+        var _this = this;
+        this.dataService.getGames('https://api.squiggle.com.au/?q=games').subscribe(function (temp) { _this.games = temp; });
+    };
+    ViewLeagueTableComponent.prototype.myFunction = function () {
+        // Declare variables 
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                }
+                else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    };
+    ViewLeagueTableComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-view-league-table',
+            template: __webpack_require__(/*! ./view-league-table.component.html */ "./src/app/view-league-table/view-league-table.component.html"),
+            styles: [__webpack_require__(/*! ./view-league-table.component.css */ "./src/app/view-league-table/view-league-table.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_data_service_service__WEBPACK_IMPORTED_MODULE_2__["DataServiceService"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+    ], ViewLeagueTableComponent);
+    return ViewLeagueTableComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/environments/environment.ts":
+/*!*****************************************!*\
+  !*** ./src/environments/environment.ts ***!
+  \*****************************************/
+/*! exports provided: environment */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
+var environment = {
+    production: false
+};
+/*
+ * For easier debugging in development mode, you can import the following file
+ * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
+ *
+ * This import should be commented out in production mode because it will have a negative impact
+ * on performance if an error is thrown.
+ */
+// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+/***/ }),
+
+/***/ "./src/main.ts":
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+
+
+
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
+}
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
+    .catch(function (err) { return console.error(err); });
+
+
+/***/ }),
+
+/***/ 0:
+/*!************************************************************************************!*\
+  !*** multi (webpack)-dev-server/client?http://0.0.0.0:0/sockjs-node ./src/main.ts ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\chien\App\node_modules\webpack-dev-server\client\index.js?http://0.0.0.0:0/sockjs-node */"./node_modules/webpack-dev-server/client/index.js?http://0.0.0.0:0/sockjs-node");
+module.exports = __webpack_require__(/*! C:\Users\chien\App\src\main.ts */"./src/main.ts");
+
+
+/***/ })
+
+},[[0,"runtime","vendor"]]]);
+//# sourceMappingURL=main.js.map

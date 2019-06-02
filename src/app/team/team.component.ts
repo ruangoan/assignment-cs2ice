@@ -1,24 +1,45 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Input, OnChanges} from '@angular/core';
 import { DataServiceService } from '../data-service.service';
 import { Team } from '../team';
 import {Observable} from 'rxjs';
+import { Game} from '../game';
 
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
   styleUrls: ['./team.component.css']
 })
-export class TeamComponent implements OnInit {
+export class TeamComponent implements OnChanges {
 
   selectedTeam: Team;
 
-  teams:Team[];
+  @Input() teams:Team[];
+  OldGames: Game[]= [];
 
   
+  
   constructor(private dataService: DataServiceService) { }
-
-  ngOnInit() {
+ngOnChanges(){
+    this.getPastGames();
     this.getAFLTeams();
+  }
+  
+  pastGames(games):void{
+    for(let game of games){
+      if(game.ateam == this.teams|| game.hteam == this.teams){
+        {
+          if(game.winner !=null)
+          {
+            this.OldGames.push(game);
+          }
+        }
+      }
+    }
+  }
+  getPastGames(): void{
+    this.dataService.getGames("https://api.squiggle.com.au/?q=games;year=2019").subscribe(temp => {
+      this.pastGames(temp);
+    });
   }
 
    onSelect(team: Team): void {

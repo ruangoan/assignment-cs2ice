@@ -1,3 +1,5 @@
+import { Team } from './team';
+
 export class Game {
 
     constructor(
@@ -22,8 +24,9 @@ export class Game {
         public agoals: number,
         public year: number,
         public date: string,
-        public id: number
+        public id: number,
+        
         
         ){}
-
+        team: Team[];
 }

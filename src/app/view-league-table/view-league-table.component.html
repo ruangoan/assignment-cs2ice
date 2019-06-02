@@ -1,28 +1,66 @@
-<div >
-    <h1>TEAM</h1>
-    <input type="text" id="myInput" (keyup)="myFunction()" placeholder="Search for names..">
+<h1>TEAM</h1>
+<input type="text" id="myInput" (keyup)="myFunction()" placeholder="Search for team..">
+<div class="box" >
+    
     
           <table id="myTable">
               <tr class="header">
                 <th style="width:5%;">ID</th>
                 <th style="width:30%;">TEAM NAME</th>
                 <th style="width:45%;">LOGO</th>
-                <th style="width:10%;">detail1</th>
-                <th style="width:10%;">detail2</th>
+                <th style="width:10%;">GAME DETAIL & UPCOMING GAME</th>
               </tr>
               <tr *ngFor="let team of teams">
                 <td>{{team.id}}</td>
                 <td>{{team.name}}</td>
                 <td><img src="https://squiggle.com.au/{{team.logo}}"></td>
                 <td>
-                  <button type="button" (click)="onSelectTeam(team)">detail</button>
+                    <div [ngSwitch]="team?.name">
+                        <a 
+                          *ngSwitchDefault
+                          href="http://localhost:4200/{{team.name}}"><button type="button" (click)="onSelectTeam(team)">Detail</button>
+                        </a>
+                        <a
+                          *ngSwitchCase="'North Melbourne'"
+                          href="http://localhost:4200/NorthMelbourne"><button type="button" (click)="onSelectTeam(team)">Detail</button>
+                        </a>
+                        <a
+                          *ngSwitchCase="'Gold Coast'"
+                          href="http://localhost:4200/GoldCoast"><button type="button" (click)="onSelectTeam(team)">Detail</button></a>
+                        
+                        <a
+                          *ngSwitchCase="'St Kilda'"
+                          href="http://localhost:4200/StKilda"><button type="button" (click)="onSelectTeam(team)">Detail</button></a>
+                        
+                        <a
+                          *ngSwitchCase="'Western Bulldogs'"
+                          href="http://localhost:4200/Bulldogs"><button type="button" (click)="onSelectTeam(team)">Detail</button></a>
+                        
+                        <a
+                          *ngSwitchCase="'West Coast'"
+                          href="http://localhost:4200/WestCoast"><button type="button" (click)="onSelectTeam(team)">Detail</button></a>
+                        
+                        <a
+                          *ngSwitchCase="'Port Adelaide'"
+                          href="http://localhost:4200/PortAdelaide"><button type="button" (click)="onSelectTeam(team)">Detail</button></a>
+                        
+                        <a
+                          *ngSwitchCase="'Greater Western Sydney'"
+                          href="http://localhost:4200/Giants"><button type="button" (click)="onSelectTeam(team)">Detail</button></a>
+                        
+                        <a
+                          *ngSwitchCase="'Brisbane Lions'"
+                          href="http://localhost:4200/Brisbane"><button type="button" (click)="onSelectTeam(team)">Detail</button></a>
+                        
+                      </div>
+
+
+                  
                 </td>
-                <td>
-                    <button type="button" (click)="onSelectGame(game)">detail2</button>
-                  </td>
               </tr>
             </table>
+            
   </div>
-<div><app-teamchild [team]="selectedTeam"></app-teamchild></div>
-<div><app-test-git [game]="selectedGame"></app-test-git></div>
+
+<!-- <app-teamchild [team]="selectedTeam"></app-teamchild> -->
     

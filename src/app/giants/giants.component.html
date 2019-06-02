@@ -1,0 +1,281 @@
+<a href="http://localhost:4200/teams"><button type="button" (click)="onSelectTeam(team)">BACK</button></a>
+  <h1>Season 2019</h1>
+<div class="box" style="margin-top: 2em;">
+  
+
+  <table id="myTable">
+          
+              <tr class="header">
+                <th style="width:5%;">Round</th>
+                <th style="width:10%;">HOME Team</th>
+                <th style="width:5%;">VS</th>
+                <th style="width:10%;">AWAY Team</th>
+                <th style="width:10%;">Winner</th>
+              </tr>
+              <tr  *ngFor="let game of games" >
+                <td>{{ game.round }}</td>
+                <td>{{game.hteam}}<div [ngSwitch]="game?.hteam">
+                    <img
+                      *ngSwitchDefault
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.hteam}}.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'North Melbourne'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/NorthMelbourne.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Gold Coast'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/GoldCoast.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'St Kilda'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/StKilda.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Western Bulldogs'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Bulldogs.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'West Coast'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/WestCoast.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Port Adelaide'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/PortAdelaide.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Greater Western Sydney'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Giants.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Brisbane Lions'"
+                      src="https://squiggle.com.au//wp-content/themes/squiggle/assets/images/Brisbane.jpg"
+                    />
+                  </div></td>
+                <td>{{game.hscore}}--{{game.ascore}}</td>
+                <td>
+                    {{game.ateam}}
+                    <div [ngSwitch]="game?.ateam">
+                        <img
+                          *ngSwitchDefault
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.ateam}}.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'North Melbourne'"
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/NorthMelbourne.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'Gold Coast'"
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/GoldCoast.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'St Kilda'"
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/StKilda.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'Western Bulldogs'"
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Bulldogs.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'West Coast'"
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/WestCoast.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'Port Adelaide'"
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/PortAdelaide.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'Greater Western Sydney'"
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Giants.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'Brisbane Lions'"
+                          src="https://squiggle.com.au//wp-content/themes/squiggle/assets/images/Brisbane.jpg"
+                        />
+                      </div>
+                    </td>
+                <td>{{ game.winner }}<div [ngSwitch]="game?.winner">
+                    <img
+                      *ngSwitchDefault
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.winner}}.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'North Melbourne'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/NorthMelbourne.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Gold Coast'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/GoldCoast.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'St Kilda'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/StKilda.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Western Bulldogs'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Bulldogs.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'West Coast'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/WestCoast.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Port Adelaide'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/PortAdelaide.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Greater Western Sydney'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Giants.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Brisbane Lions'"
+                      src="https://squiggle.com.au//wp-content/themes/squiggle/assets/images/Brisbane.jpg"
+                    />
+                  </div>
+                </td>
+                </tr>
+            </table>
+            
+  </div>
+  <h1>UP COMING GAME</h1>
+  <div class="box" style="margin-top: 2em;">
+  <table id="myTable">
+          
+    <tr class="header">
+      <th style="width:5%;">Round</th>
+      <th style="width:10%;">HOME Team</th>
+      <th style="width:5%;">VS</th>
+      <th style="width:10%;">AWAY Team</th>
+      <th style="width:10%;">Prediction</th>
+    </tr>
+    <tr *ngFor="let game of nextgames, let i = index" >
+        
+      <td *ngIf="i<5">{{ game.round }}</td>
+      <td *ngIf="i<5">{{game.hteam}}<div [ngSwitch]="game?.hteam">
+          <img
+            *ngSwitchDefault
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.hteam}}.jpg"
+          />
+          <img
+            *ngSwitchCase="'North Melbourne'"
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/NorthMelbourne.jpg"
+          />
+          <img
+            *ngSwitchCase="'Gold Coast'"
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/GoldCoast.jpg"
+          />
+          <img
+            *ngSwitchCase="'St Kilda'"
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/StKilda.jpg"
+          />
+          <img
+            *ngSwitchCase="'Western Bulldogs'"
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Bulldogs.jpg"
+          />
+          <img
+            *ngSwitchCase="'West Coast'"
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/WestCoast.jpg"
+          />
+          <img
+            *ngSwitchCase="'Port Adelaide'"
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/PortAdelaide.jpg"
+          />
+          <img
+            *ngSwitchCase="'Greater Western Sydney'"
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Giants.jpg"
+          />
+          <img
+            *ngSwitchCase="'Brisbane Lions'"
+            src="https://squiggle.com.au//wp-content/themes/squiggle/assets/images/Brisbane.jpg"
+          />
+        </div></td>
+      <td *ngIf="i<5">{{game.hscore}}--{{game.ascore}}</td>
+      <td *ngIf="i<5">
+          {{game.ateam}}
+          <div [ngSwitch]="game?.ateam">
+              <img
+                *ngSwitchDefault
+                src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.ateam}}.jpg"
+              />
+              <img
+                *ngSwitchCase="'North Melbourne'"
+                src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/NorthMelbourne.jpg"
+              />
+              <img
+                *ngSwitchCase="'Gold Coast'"
+                src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/GoldCoast.jpg"
+              />
+              <img
+                *ngSwitchCase="'St Kilda'"
+                src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/StKilda.jpg"
+              />
+              <img
+                *ngSwitchCase="'Western Bulldogs'"
+                src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Bulldogs.jpg"
+              />
+              <img
+                *ngSwitchCase="'West Coast'"
+                src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/WestCoast.jpg"
+              />
+              <img
+                *ngSwitchCase="'Port Adelaide'"
+                src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/PortAdelaide.jpg"
+              />
+              <img
+                *ngSwitchCase="'Greater Western Sydney'"
+                src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Giants.jpg"
+              />
+              <img
+                *ngSwitchCase="'Brisbane Lions'"
+                src="https://squiggle.com.au//wp-content/themes/squiggle/assets/images/Brisbane.jpg"
+              />
+            </div>
+          </td>
+      <td *ngIf="i<5">{{ game.winner }}<div [ngSwitch]="game?.winner">
+          <img
+            *ngSwitchDefault
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.winner}}.jpg"
+          />
+          <img
+            *ngSwitchCase="'North Melbourne'"
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/NorthMelbourne.jpg"
+          />
+          <img
+            *ngSwitchCase="'Gold Coast'"
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/GoldCoast.jpg"
+          />
+          <img
+            *ngSwitchCase="'St Kilda'"
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/StKilda.jpg"
+          />
+          <img
+            *ngSwitchCase="'Western Bulldogs'"
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Bulldogs.jpg"
+          />
+          <img
+            *ngSwitchCase="'West Coast'"
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/WestCoast.jpg"
+          />
+          <img
+            *ngSwitchCase="'Port Adelaide'"
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/PortAdelaide.jpg"
+          />
+          <img
+            *ngSwitchCase="'Greater Western Sydney'"
+            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Giants.jpg"
+          />
+          <img
+            *ngSwitchCase="'Brisbane Lions'"
+            src="https://squiggle.com.au//wp-content/themes/squiggle/assets/images/Brisbane.jpg"
+          />
+        </div>
+      </td>
+      </tr>
+  </table>
+  
+
+</div>
+  <a href="http://localhost:4200/teams"><button type="button" (click)="onSelectTeam(team)">BACK</button></a>
+
+
+    

@@ -4,37 +4,47 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
- 
+  /* height: 300px; */color: 
 }
 
 li {
   float: left;
+  /* color: darkblue; */
 }
 
 li a {
   display: block;
   color: black;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   text-decoration: none;
+  /* padding-top: 120px; */
 }
 
 li a:hover {
-  background-color: #f05353;
+  background-color: darkblue;
+  
 }
 h1 {
-  text-align: left;
+  text-align: center;
 }
-body{
+.body{
   background-image:url(  "https://pmgfamily.org/wp-content/uploads/2018/06/dab895a256053f09af23742ebeaed127.jpg");
-  background-size: contain;
+  /* background-size: auto; */
+  width: 100%;
+  height:100%;
 }
-div {
-  /* width: 90%px; */
+.box {
+  width: 90%px;
   border: 10px solid green;
-  /* padding: 10px; */
+  padding: 10px;
   margin: 120px;
   overflow-y: auto;
-  /* overscroll-behavior-y: contain; */
+  overscroll-behavior-y: contain;
   height: 350px;
+} 
+.logo{
+  background-image: url("afl.png");
+  background-size: 300px;
+  height: 150px;
 }

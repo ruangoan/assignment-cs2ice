@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {Observable} from 'rxjs';
 import {DataServiceService} from '../data-service.service';
 import {Team} from '../team';
-import { Router, Route } from "@angular/router";
-import { Game } from '../game';
+import { Router} from "@angular/router";
+import { Game } from '../team';
 
 @Component({
   selector: 'app-view-league-table',
@@ -24,8 +24,9 @@ export class ViewLeagueTableComponent implements OnInit {
     this.getAFLTeams();
   }
 
-  onSelectTeam(team: Team): void {
+  onSelectTeam(team: Team, game: Game): void {
     this.selectedTeam = team;
+   this.selectedGame = game;
     // this.route.navigate(["/teamchild"])
   }
   
@@ -35,16 +36,7 @@ export class ViewLeagueTableComponent implements OnInit {
   onSelectGame(game: Game):void{
     this.selectedGame = game;
   }
-  // getGames(): void {
-  //   this.showSpinner = true;
-  //   this.dataService.getGames("https://api.squiggle.com.au/?q=games;year=2019")
-  //   .subscribe(temp => {this.games = temp.filter(
-  //     (team: any) =>
-  //       (team.complete == 100 && team.ateam ) ||
-  //       (team.complete == 100 && team.hteam )
-  //   );})
-  //     .add(() => (this.showSpinner = false));
-  // }
+  
   getGames(): void {
     this.dataService.getGames('https://api.squiggle.com.au/?q=games').subscribe(temp => { this.games = temp;});
   }

@@ -1,106 +1,140 @@
-<div
-  id="spinner"
-  *ngIf="showSpinner"
-  class="spinner-border text-danger m-5"
-  style="width: 3rem; height: 3rem;"
-  role="status"
->
-  <span class="sr-only">Loading...</span>
-</div>
 
-<div *ngFor="let game of games" style="margin-top: 2em;">
-  <p class="round">
-    <span>Round: </span>{{ game.round }}<span> Winner: </span>{{ game.winner }}
-  </p>
-  <div class="wrapper">
-    <div>
-      {{ game.hteam }}
-        <div [ngSwitch]="game?.hteam">
-          <img
-            *ngSwitchDefault
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.hteam}}.jpg"
-          />
-          <img
-            *ngSwitchCase="'North Melbourne'"
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/NorthMelbourne.jpg"
-          />
-          <img
-            *ngSwitchCase="'St Kilda'"
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/StKilda.jpg"
-          />
-          <img
-            *ngSwitchCase="'Gold Coast'"
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/GoldCoast.jpg"
-          />
-          <img
-            *ngSwitchCase="'Western Bulldogs'"
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Bulldogs.jpg"
-          />
-          <img
-            *ngSwitchCase="'West Coast'"
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/WestCoast.jpg"
-          />
-          <img
-            *ngSwitchCase="'Port Adelaide'"
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/PortAdelaide.jpg"
-          />
-          <img
-            *ngSwitchCase="'Greater Western Sydney'"
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Giants.jpg"
-          />
-        </div>
-    </div>
-    <div>
-      <p class="score">
-        {{ game.hscore }}
-      </p>
-    </div>
-    <div>
-      <p class="score">
-        VS
-      </p>
-    </div>
-    <div>
-      <p class="score">
-        {{ game.ascore }}
-      </p>
-    </div>
-    <div>
-      {{ game.ateam }}
-        <div [ngSwitch]="game?.ateam">
-          <img
-            *ngSwitchDefault
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.ateam}}.jpg"
-          />
-          <img
-            *ngSwitchCase="'North Melbourne'"
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/NorthMelbourne.jpg"
-          />
-          <img
-            *ngSwitchCase="'Gold Coast'"
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/GoldCoast.jpg"
-          />
-          <img
-            *ngSwitchCase="'St Kilda'"
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/StKilda.jpg"
-          />
-          <img
-            *ngSwitchCase="'Western Bulldogs'"
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Bulldogs.jpg"
-          />
-          <img
-            *ngSwitchCase="'West Coast'"
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/WestCoast.jpg"
-          />
-          <img
-            *ngSwitchCase="'Port Adelaide'"
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/PortAdelaide.jpg"
-          />
-          <img
-            *ngSwitchCase="'Greater Western Sydney'"
-            src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Giants.jpg"
-          />
-        </div>
-    </div>
+<div class="box" style="margin-top: 2em;">
+    <input type="text" id="myInput1" (keyup)="myFunction1()" placeholder="Search for HOME Team..">
+    <input type="text" id="myInput2" (keyup)="myFunction2()" placeholder="Search for AWAY Team..">
+          <table id="myTable">
+          
+              <tr class="header">
+                <th style="width:5%;">Round</th>
+                <th style="width:10%;">HOME Team</th>
+                <th style="width:5%;">VS</th>
+                <th style="width:10%;">AWAY Team</th>
+                <th style="width:10%;">Winner</th>
+              </tr>
+              <tr  *ngFor="let game of games" >
+                <td>{{ game.round }}</td>
+                <td>{{game.hteam}}<div [ngSwitch]="game?.hteam">
+                    <img
+                      *ngSwitchDefault
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.hteam}}.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'North Melbourne'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/NorthMelbourne.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Gold Coast'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/GoldCoast.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'St Kilda'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/StKilda.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Western Bulldogs'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Bulldogs.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'West Coast'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/WestCoast.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Port Adelaide'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/PortAdelaide.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Greater Western Sydney'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Giants.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Brisbane Lions'"
+                      src="https://squiggle.com.au//wp-content/themes/squiggle/assets/images/Brisbane.jpg"
+                    />
+                  </div></td>
+                <td>{{game.hscore}}--{{game.ascore}}</td>
+                <td>
+                    {{game.ateam}}
+                    <div [ngSwitch]="game?.ateam">
+                        <img
+                          *ngSwitchDefault
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.ateam}}.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'North Melbourne'"
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/NorthMelbourne.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'Gold Coast'"
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/GoldCoast.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'St Kilda'"
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/StKilda.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'Western Bulldogs'"
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Bulldogs.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'West Coast'"
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/WestCoast.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'Port Adelaide'"
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/PortAdelaide.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'Greater Western Sydney'"
+                          src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Giants.jpg"
+                        />
+                        <img
+                          *ngSwitchCase="'Brisbane Lions'"
+                          src="https://squiggle.com.au//wp-content/themes/squiggle/assets/images/Brisbane.jpg"
+                        />
+                      </div>
+                    </td>
+                <td>{{ game.winner }}<div [ngSwitch]="game?.winner">
+                    <img
+                      *ngSwitchDefault
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/{{game.winner}}.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'North Melbourne'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/NorthMelbourne.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Gold Coast'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/GoldCoast.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'St Kilda'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/StKilda.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Western Bulldogs'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Bulldogs.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'West Coast'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/WestCoast.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Port Adelaide'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/PortAdelaide.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Greater Western Sydney'"
+                      src="https://squiggle.com.au/wp-content/themes/squiggle/assets/images/Giants.jpg"
+                    />
+                    <img
+                      *ngSwitchCase="'Brisbane Lions'"
+                      src="https://squiggle.com.au//wp-content/themes/squiggle/assets/images/Brisbane.jpg"
+                    />
+                  </div>
+                </td>
+                </tr>
+            </table>
   </div>
-</div>
+
+
+    

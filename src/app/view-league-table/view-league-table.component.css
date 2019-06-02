@@ -1,25 +1,4 @@
- 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
- 
-}
-
-
-
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #f05353;
-}
-h1 {
+ h1 {
   text-align: center;
   color: #f05353;
   font-size: 60px;
@@ -51,29 +30,37 @@ table {
     width: 100%; /* Full-width */
     font-size: 16px; /* Increase font-size */
     padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
+    border: 1px solid white; /* Add a grey border */
     margin-bottom: 12px; /* Add some space below the input */
   }
   
   #myTable {
     border-collapse: collapse; /* Collapse borders */
     width: 100%; /* Full-width */
-    border: 1px solid #ddd; /* Add a grey border */
+    border: 1px solid white; /* Add a grey border */
     font-size: 18px; /* Increase font-size */
   }
   
   #myTable th, #myTable td {
     text-align: center; 
     padding: 12px; /* Add padding */
-    background-color: #f1f1f1;
+    background-color: white;
   }
   
   #myTable tr {
     /* Add a bottom border to all table rows */
-    border-bottom: 1px solid #ddd; 
+    border-bottom: 1px solid white; 
   }
   
   /* #myTable tr.header, #myTable tr:hover {
     /* Add a grey background color to the table header and on hover */
     
-  
+    .box {
+      width: 60%px;
+      border: 10px solid green;
+      
+      margin: 10px;
+      overflow-y: auto;
+      overscroll-behavior-y: contain;
+      height: 400px;
+    }
