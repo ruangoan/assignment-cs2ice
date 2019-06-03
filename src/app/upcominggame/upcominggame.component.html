@@ -1,3 +1,5 @@
+<h1>UP COMING GAME</h1>
+<input type="text" id="myInput" (keyup)="myFunction()" placeholder="Search for team..">
 <div class="box" style="margin-top: 2em;">
     <!-- <input type="text" id="myInput1" (keyup)="myFunction1()" placeholder="Search for HOME Team.."> -->
     <!-- <input type="text" id="myInput2" (keyup)="myFunction2()" placeholder="Search for AWAY Team.."> -->
@@ -11,7 +13,7 @@
                 <th style="width:10%;">Winner</th>
               </tr>
 
-              <tr *ngFor="let t of tipsFavor">
+              <tr *ngFor="let t of tips">
                 <td>{{t.round}}</td>
                 <td>{{t.hteam}}
                   <div [ngSwitch]="t?.hteam">

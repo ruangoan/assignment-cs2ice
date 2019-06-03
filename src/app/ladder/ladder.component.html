@@ -1,23 +1,22 @@
-<div id="rank">
-  <p>Click the button to sort the table alphabetically, by name:</p>
-  <p><button (click)="sortTable()">Sort</button></p>
+<div class="box">
+  
     <table id="myTable">
 
         <tr>
-          <th >Team</th>
           <th >Rank</th>
+          <th >Team</th>
           <th >PCT</th>
         </tr>
         
       
       
-        <tr *ngFor="let rank of ranks" >
+        <tr *ngFor="let rank of ranks, let i = index" >
+          
+          <td *ngIf="i<18" >{{rank.rank}}</td>
+          <td *ngIf="i<18">{{rank.team}}</td>
+          <td *ngIf="i<18">{{rank.wins}}</td>
       
-          <td>{{rank.team}}</td>
-          <td>{{rank.rank}}</td>
-          <td>{{rank.wins}}</td>
-      
-      
+        
         </tr>
       
         

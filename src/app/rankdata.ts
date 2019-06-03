@@ -8,8 +8,8 @@ import { Rank } from './rank';
   })   
 export class Rankdata {
     constructor(private http: HttpClient) { }
-    getRank(): Observable<Rank[]> {
-        return this.http.get('https://api.squiggle.com.au/?q=ladder').pipe(
+    getRank(teamURL: string): Observable<Rank[]> {
+        return this.http.get(teamURL).pipe(
             map((data: any) => data.ladder.map((item: any) => new Rank(
                 item.rank,
                 item.round,
@@ -23,7 +23,7 @@ export class Rankdata {
                 item.percentage,
                 item.updated,
                 item.mean_rank
-            )))
+            ) ))
         );
     }
 }

@@ -17,29 +17,18 @@ table {
     td{
       font-size: 30px;
     }
-    #myInput1 {
+    #myInput {
       background-image: url('/css/searchicon.png'); /* Add a search icon to input */
       background-position: 10px 12px; /* Position the search icon */
       background-repeat: no-repeat; /* Do not repeat the icon image */
-      width: 35%; /* Full-width */
+      width: 100%; /* Full-width */
       font-size: 16px; /* Increase font-size */
       padding: 12px 20px 12px 40px; /* Add some padding */
       border: 1px solid red; /* Add a grey border */
       margin-bottom: 12px; /* Add some space below the input */
       
     }
-    #myInput2 {
-      background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-      background-position: 10px 12px; /* Position the search icon */
-      background-repeat: no-repeat; /* Do not repeat the icon image */
-      width: 35%; /* Full-width */
-      text-align: right;
-      font-size: 16px; /* Increase font-size */
-      padding: 12px 20px 12px 40px; /* Add some padding */
-      border: 1px solid blue; /* Add a grey border */
-      margin-bottom: 2px; /* Add some space below the input */
-      
-    }
+    
     
     #myTable {
       border-collapse: collapse; /* Collapse borders */
@@ -71,4 +60,9 @@ table {
         overflow-y: auto;
         overscroll-behavior-y: contain;
         height: 450px;
+      }
+      h1{
+        text-align: center;
+        color: rgb(170, 31, 31);
+        font-size: 50px;
       }

@@ -10,7 +10,7 @@ import { DatePipe } from '@angular/common';
   styleUrls: ['./upcominggame.component.css']
 })
 export class UpcominggameComponent implements OnInit {
-tipsFavor: Tip[] = [];
+tips: Tip[];
   constructor(private dataService: DataServiceService) { }
   
   ngOnInit() {
@@ -29,11 +29,35 @@ tipsFavor: Tip[] = [];
   // }
   getTips(): void {
     
-    this.dataService.getTips().subscribe(temp => { this.tipsFavor = (temp)});
-      
+    this.dataService.getTips("https://api.squiggle.com.au/?q=tips;year=2019;source=1").subscribe(temp => {this.tips = temp
+    .filter(
+    (tip: any) =>
+      tip.round>'11');}); 
+    }
+    myFunction() {
+      // Declare variables 
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+    
+      // Loop through all table rows, and hide those who don't match the search query
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[1];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        } 
+      }
+    }
   }
   // getPrediction():void{
   //   this.dataService.getTips().subscribe(temp => { this.prediction = (temp)});
   // }
-}
+
   
